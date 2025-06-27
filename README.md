@@ -1,2 +1,2 @@
 # garden-tracker
-A react project for tracking garden activity.
+A project for tracking garden activity.
