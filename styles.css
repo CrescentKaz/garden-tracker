@@ -2,16 +2,35 @@ body {
     background-color: antiquewhite; 
 }
 
+.garden-map {
+    margin: auto;
+    width: 50%;
+}
+
+.horizontal-content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 .garden-location-s {
-    height: 12px;
-    width: 12px;
+    margin: 0;
+    height: 24px;
+    width: 24px;
     border: black solid 2px;
     background-color: yellow;
 }
 
 .garden-location-c {
-    height: 8px;
-    width: 8px;
+    margin: 0;
+    height: 16px;
+    width: 16px;
     border: black solid 2px;
     background-color: green;
 }
