@@ -3,23 +3,25 @@ body {
 }
 
 .garden-map {
-    width: 50%;
+    max-width: 95%;
+    margin: auto;
 }
 
 .horizontal-content {
     display: block;
     margin: 0;
     padding: 0;
+    box: border-box;
 }
 
 .vertical-content {
     display: inline-block;
     margin: 0;
     padding: 0;
+    box: border-box;
 }
 
 .garden-location-s {
-    margin: 0;
     height: 48px;
     width: 48px;
     border: black solid 2px;
@@ -27,7 +29,6 @@ body {
 }
 
 .garden-location-c {
-    margin: 0;
     height: 32px;
     width: 32px;
     border: black solid 2px;
@@ -35,6 +36,6 @@ body {
 }
 
 .garden-log {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
