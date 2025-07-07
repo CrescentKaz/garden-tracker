@@ -3,7 +3,6 @@ body {
 }
 
 .garden-map {
-    margin: auto;
     width: 50%;
 }
 
@@ -21,16 +20,16 @@ body {
 
 .garden-location-s {
     margin: 0;
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
     border: black solid 2px;
     background-color: yellow;
 }
 
 .garden-location-c {
     margin: 0;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border: black solid 2px;
     background-color: green;
 }
