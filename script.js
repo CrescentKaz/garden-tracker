@@ -44,7 +44,7 @@ function showNotes() {
 
 
 function displayNotes() {
-    for (planted[i], i=0, i++) {
+    for (planted.length, i=0, i++) {
         gardenNotes.innerText += planted[i].item + " was planted on " + planted[i].planted + " in " + planted[i].location;
         gardenNotes.innerText += "Estimated harvest is " + planted[i].harvest;
     }
