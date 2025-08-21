@@ -47,7 +47,7 @@ function showNotes() {
 
 function displayNotes() {
     for (let i=0; i<planted.length; i++) {
-        gardenNotes.innerText += planted[i].item + " was planted on " + planted[i].planted + " in " + planted[i].location;
-        gardenNotes.innerText += "Estimated harvest is " + planted[i].harvest;
+        gardenNotes.innerHTML += <p>${planted[i].item} was planted on ${planted[i].planted} in ${planted[i].location}</p><br>
+        <p>Estimated harvest is ${planted[i].harvest}</p><br><br>;
     }
 }
