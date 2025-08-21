@@ -4,15 +4,17 @@ const p1c13 = document.getElementById(p1c13);
 
 const planted = [
     {
-        location: p1c13,
+        plot: 1,
+        location: "C13",
         item: "Chocolate Mint",
-        planted: "",
+        planted: "unknown",
         harvest: "AN"
     },
     {
-        location: p1c12,
+        plot: 1,
+        location: "C12",
         item: "Chotolate Mint",
-        planted: "",
+        planted: "unknown",
         harvest: "AN"
     }
 ];
@@ -54,6 +56,6 @@ function displayPlot2Notes() {}
 
 function displayNotes() {
     for (let i=0; i<planted.length; i++) {
-        gardenNotes.innerHTML += <p>${planted[i].item} was planted on ${planted[i].planted} in ${planted[i].location}<br />Estimated harvest is ${planted[i].harvest}<br /><br /></p>;
+        gardenNotes.innerHTML += <p>${planted[i].item} was planted on ${planted[i].planted} in Plot ${planted[i].plot}, ${planted[i].location}<br />   Estimated harvest is ${planted[i].harvest}<br /><br /></p>;
     }
 }
