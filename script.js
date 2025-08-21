@@ -1,3 +1,5 @@
+const p1c1 = document.getElementById(p1c1);
+
 const planted = [
     {
         location: p1c13,
