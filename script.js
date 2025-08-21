@@ -39,14 +39,13 @@ function showNotes() {
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
     notesSection.style.display = "contents";
-//    displayNotes();
+    displayNotes();
 }
 
-/*
+
 function displayNotes() {
-    for () {
+    for (planted[i], i=0, i++) {
         gardenNotes.innerText += planted[i].item + " was planted on " + planted[i].planted + " in " + planted[i].location;
         gardenNotes.innerText += "Estimated harvest is " + planted[i].harvest;
     }
 }
-*/
