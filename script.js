@@ -50,12 +50,16 @@ function showNotes() {
     displayNotes();
 }
 
-function displayPlot1Notes() {}
+function displayPlot1Notes() {
+    console.log("plot 1 notes");
+}
 
-function displayPlot2Notes() {}
+function displayPlot2Notes() {
+    console.log("plot 2 notes");
+}
 
 function displayNotes() {
     for (let i=0; i<planted.length; i++) {
         gardenNotes.innerHTML += <p>${planted[i].item} was planted on ${planted[i].planted} in Plot ${planted[i].plot}, ${planted[i].location}<br />   Estimated harvest is ${planted[i].harvest}<br /><br /></p>;
-    }
+    };
 }
