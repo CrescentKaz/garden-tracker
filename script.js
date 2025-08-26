@@ -60,7 +60,10 @@ function displayPlot2Notes() {
 
 function displayNotes() {
     console.log("garden notes");
-    /* for (let i=0; i<planted.length; i++) {
-        gardenNotes.innerHTML += <p>${planted[i].item} was planted on ${planted[i].planted} in Plot ${planted[i].plot}, ${planted[i].location}<br />   Estimated harvest is ${planted[i].harvest}<br /><br /></p>;
-    };*/
+    let len = planted.length;
+    let text = "";
+    for (let i = 0; i < len; i++) {
+        text += "<p>" + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + "<br>Estimated harvest is " + planted[i].harvest + "<br><br></p>";
+    };
+    gardenNotes.innerHTML = text;
 }
