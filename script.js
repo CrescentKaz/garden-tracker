@@ -63,7 +63,7 @@ function displayNotes() {
     let len = planted.length;
     let text = "";
     for (let i = 0; i < len; i++) {
-        text += "<p>" + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + "<br>Estimated harvest is " + planted[i].harvest + "<br><br></p>";
+        text += planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + "<br>Estimated harvest is " + planted[i].harvest + "<br><br>";
     };
-    gardenNotes.innerHTML = text;
+    gardenNotes.innerText = text;
 }
