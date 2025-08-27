@@ -8,14 +8,20 @@ body {
 }
 
 .horizontal-content {
-    display: block;
+    /*display: block;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     box: border-box;
 }
 
 .vertical-content {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
     box: border-box;
