@@ -1,3 +1,4 @@
+const gardenNotes = document.getElementById(gardenNotes);
 const p1c1 = document.getElementById(p1c1);
 const p1c12 = document.getElementById(p1c12);
 const p1c13 = document.getElementById(p1c13);
