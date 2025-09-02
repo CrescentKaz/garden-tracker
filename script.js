@@ -1,4 +1,4 @@
-const gardenNotes = document.getElementById(gardenNotes);
+// const gardenNotes = document.getElementById(gardenNotes);
 const p1c1 = document.getElementById(p1c1);
 const p1c12 = document.getElementById(p1c12);
 const p1c13 = document.getElementById(p1c13);
@@ -66,5 +66,5 @@ function displayNotes() {
     for (let i = 0; i < len; i++) {
         text += planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + "<br>Estimated harvest is " + planted[i].harvest + "<br><br>";
     };
-    gardenNotes.innerText = text;
+    document.getElementById(gardenNotes).innerText = text;
 }
