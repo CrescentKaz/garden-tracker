@@ -3,8 +3,8 @@ body {
 }
 
 .garden-map {
-    max-width: 95%;
     margin: auto;
+    width: auto;
 }
 
 .horizontal-content {
@@ -28,16 +28,20 @@ body {
 }
 
 .garden-location-s {
-    height: 53.3px;
-    width: 53.3px;
-    border: black solid 2px;
+    min-height: 53.3px;
+    min-width: 53.3px;
+    height: 15vw;
+    width: 15vw;
+    border: black solid 1px;
     background-color: yellow;
 }
 
 .garden-location-c {
-    height: 32px;
-    width: 32px;
-    border: black solid 2px;
+    min-height: 32px;
+    min-width: 32px;
+    height: 10vw;
+    width: 10vw;
+    border: black solid 1px;
     background-color: green;
 }
 
