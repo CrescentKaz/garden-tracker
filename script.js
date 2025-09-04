@@ -1,6 +1,6 @@
 const gardenNotes = document.querySelector("#gardenNotes");
-const plot1Log = document.getElementById("plot1Log");
-const plot2Log = document.getElementById("plot2Log");
+const plot1Log = document.querySelector("#plot1Log");
+const plot2Log = document.querySelector("#plot2Log");
 
 const planted = [
     {
@@ -76,7 +76,7 @@ function displayPlot1Notes() {
     let p1Len = planted.filter(filterByP1);
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
-        text += p1Len[i].item + " was planted on " + p1Len[i].planted + " in " + p1Len[i].location + 
+        text += "* " + p1Len[i].item + " was planted on " + p1Len[i].planted + " in " + p1Len[i].location + 
         ". \n Estimated harvest is " + p1Len[i].harvest + ". \n \n";
     };
     plot1Log.innerText = text;
@@ -87,7 +87,7 @@ function displayPlot2Notes() {
     let p2Len = planted.filter(filterByP2);
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
-        text += p2Len[i].item + " was planted on " + p2Len[i].planted + " in " + p2Len[i].location + 
+        text += "* "+ p2Len[i].item + " was planted on " + p2Len[i].planted + " in " + p2Len[i].location + 
         ". \n Estimated harvest is " + p2Len[i].harvest + ". \n \n";
     };
     plot2Log.innerText = text;
@@ -98,7 +98,7 @@ function displayNotes() {
     let len = planted.length;
     let text = "";
     for (let i = 0; i < len; i++) {
-        text += planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
+        text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
         ". \n Estimated harvest is " + planted[i].harvest + ". \n \n";
     };
     gardenNotes.innerText = text;
