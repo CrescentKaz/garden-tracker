@@ -6,25 +6,28 @@ let testing = true;
 
 const planted = [
     {
-        plot: 1,
+        plot: "1",
         location: "C13",
         item: "Chocolate Mint",
         planted: "unknown date",
-        harvest: "as needed"
+        harvest: "as needed",
+        removed: ""
     },
     {
-        plot: 1,
+        plot: "1",
         location: "C12",
         item: "Chotolate Mint",
         planted: "unknown date",
-        harvest: "as needed"
+        harvest: "as needed",
+        removed: ""
     },
     {
-        plot: 2,
+        plot: "2",
         location: "S23?",
         item: "corn",
         planted: "unknown date",
-        harvest: "NA... ants killed the whole plant"
+        harvest: "NA... ants killed the whole plant",
+        removed: ""
     }
 ];
 
@@ -96,7 +99,7 @@ function displayPlot1Notes() {
     if (testing) {
         console.log("plot 1 notes");
     };
-    let p1Len = planted.filter(filterByP1);
+    let p1Len = planted.filter(filterByP1());
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
         text += "* " + p1Len[i].item + " was planted on " + p1Len[i].planted + " in " + p1Len[i].location + 
