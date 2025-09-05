@@ -2,8 +2,10 @@ const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");
 
+// set testing to true to display console logs for troubleshoot. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
 
+// the planted array houses all gardening updates. 
 const planted = [
     {
         plot: "1",
@@ -31,6 +33,7 @@ const planted = [
     }
 ];
 
+// triggered by a button, shows only the content first visable upon page (DOM?) loading. 
 function showHome() {
     homeSection.style.display = "contents";
     plot1Section.style.display = "none";
@@ -38,6 +41,7 @@ function showHome() {
     notesSection.style.display = "none";
 }
 
+// triggered by a button. shows only the content related to plot 1.
 function showPlot1() {
     homeSection.style.display = "none";
     plot1Section.style.display = "contents";
@@ -46,6 +50,7 @@ function showPlot1() {
     displayPlot1Notes();
 }
 
+// triggered by a button. shows only the content related to plot 2.
 function showPlot2() {
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
@@ -54,6 +59,7 @@ function showPlot2() {
     displayPlot2Notes();
 }
 
+// triggered by a button, shows only the content in the Notes section.
 function showNotes() {
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
@@ -62,6 +68,7 @@ function showNotes() {
     displayNotes();
 }
 
+// displayNotes shows all entries of the planted array in a more reader friendly format. 
 function displayNotes() {
     if (testing) {
         console.log("garden notes");
@@ -75,8 +82,9 @@ function displayNotes() {
     gardenNotes.innerText = text;
 }
 
-function filterByP1(item) {
-    if (item.plot === 1) {
+// filterByP1 is currently testing a change. removed the argument. need to use website dev tools to see the console logs and evaluate if the change worked. 
+function filterByP1() {
+    if (planted.plot === 1) {
         return true;
     };
     return false;
@@ -85,6 +93,7 @@ function filterByP1(item) {
     };
 }
 
+// filterByP2 is currently written based off the format listed on W3 Schools on the lesson about the filter method. 
 function filterByP2(item) {
     if (item.plot === 2) {
         return true;
@@ -95,6 +104,7 @@ function filterByP2(item) {
     };
 }
 
+// displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked. currently it is not displaying any content on the page. need to use the dev tools to view the console log and see if it's even triggering properly.
 function displayPlot1Notes() {
     if (testing) {
         console.log("plot 1 notes");
@@ -108,6 +118,7 @@ function displayPlot1Notes() {
     plot1Log.innerText = text;
 }
 
+// displayPlot2Notes has a similar function and problem to that of displayPlot1Notes. 
 function displayPlot2Notes() {
     if (testing) {
         console.log("plot 2 notes");
