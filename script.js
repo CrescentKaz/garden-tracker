@@ -84,24 +84,24 @@ function displayNotes() {
 
 // filterByP1 is currently testing a change. removed the argument. need to use website dev tools to see the console logs and evaluate if the change worked. 
 function filterByP1() {
+    if (testing) {
+        console.log("filter by p1");
+    };
     if (planted.plot === 1) {
         return true;
     };
     return false;
-    if (testing) {
-        console.log("filter by p1");
-    };
 }
 
 // filterByP2 is currently written based off the format listed on W3 Schools on the lesson about the filter method. 
 function filterByP2(item) {
+    if (testing) {
+        console.log("filter by p2");
+    };
     if (item.plot === 2) {
         return true;
     };
     return false;
-    if (testing) {
-        console.log("filter by p2");
-    };
 }
 
 // displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked. currently it is not displaying any content on the page. need to use the dev tools to view the console log and see if it's even triggering properly.
