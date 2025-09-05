@@ -99,7 +99,7 @@ function displayPlot1Notes() {
     if (testing) {
         console.log("plot 1 notes");
     };
-    let p1Len = planted.filter(filterByP1());
+    let p1Len = planted.filter(filterByP1);
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
         text += "* " + p1Len[i].item + " was planted on " + p1Len[i].planted + " in " + p1Len[i].location + 
