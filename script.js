@@ -2,6 +2,8 @@ const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");
 
+let testing = true;
+
 const planted = [
     {
         plot: 1,
@@ -57,22 +59,43 @@ function showNotes() {
     displayNotes();
 }
 
+function displayNotes() {
+    if (testing) {
+        console.log("garden notes");
+    };
+    let len = planted.length;
+    let text = "";
+    for (let i = 0; i < len; i++) {
+        text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
+        ". \n Estimated harvest is " + planted[i].harvest + ". \n \n";
+    };
+    gardenNotes.innerText = text;
+}
+
 function filterByP1(item) {
-    if (item.plot = 1) {
+    if (item.plot === 1) {
         return true;
     };
     return false;
+    if (testing) {
+        console.log("filter by p1");
+    };
 }
 
 function filterByP2(item) {
-    if (item.plot = 2) {
+    if (item.plot === 2) {
         return true;
     };
     return false;
+    if (testing) {
+        console.log("filter by p2");
+    };
 }
 
 function displayPlot1Notes() {
-    console.log("plot 1 notes");
+    if (testing) {
+        console.log("plot 1 notes");
+    };
     let p1Len = planted.filter(filterByP1);
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
@@ -83,7 +106,9 @@ function displayPlot1Notes() {
 }
 
 function displayPlot2Notes() {
-    console.log("plot 2 notes");
+    if (testing) {
+        console.log("plot 2 notes");
+    };
     let p2Len = planted.filter(filterByP2);
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
@@ -91,15 +116,4 @@ function displayPlot2Notes() {
         ". \n Estimated harvest is " + p2Len[i].harvest + ". \n \n";
     };
     plot2Log.innerText = text;
-}
-
-function displayNotes() {
-    console.log("garden notes");
-    let len = planted.length;
-    let text = "";
-    for (let i = 0; i < len; i++) {
-        text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
-        ". \n Estimated harvest is " + planted[i].harvest + ". \n \n";
-    };
-    gardenNotes.innerText = text;
 }
