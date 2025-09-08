@@ -83,6 +83,7 @@ function displayNotes() {
 }
 
 // filterByP1 is currently testing a change. removed the argument. need to use website dev tools to see the console logs and evaluate if the change worked. 
+/*
 function filterByP1() {
     if (testing) {
         console.log("filter by p1");
@@ -92,6 +93,7 @@ function filterByP1() {
     };
     return false;
 }
+*/
 
 // filterByP2 is currently written based off the format listed on W3 Schools on the lesson about the filter method. 
 function filterByP2(item) {
@@ -104,16 +106,17 @@ function filterByP2(item) {
     return false;
 }
 
-// displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked. currently it is not displaying any content on the page. need to use the dev tools to view the console log and see if it's even triggering properly.
+// displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
 function displayPlot1Notes() {
     if (testing) {
         console.log("plot 1 notes");
     };
-    let p1Len = planted.filter(filterByP1);
+    let p1Filter = planted.filter(planted.plot === 1);
+    let p1Len = p1Filter.length;
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
-        text += "* " + p1Len[i].item + " was planted on " + p1Len[i].planted + " in " + p1Len[i].location + 
-        ". \n Estimated harvest is " + p1Len[i].harvest + ". \n \n";
+        text += "* " + p1Filter[i].item + " was planted on " + p1Filter[i].planted + " in " + p1Filter[i].location + 
+        ". \n Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
     };
     plot1Log.innerText = text;
 }
