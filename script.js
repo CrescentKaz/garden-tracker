@@ -82,30 +82,6 @@ function displayNotes() {
     gardenNotes.innerText = text;
 }
 
-// filterByP1 is currently testing a change. removed the argument. need to use website dev tools to see the console logs and evaluate if the change worked. 
-/*
-function filterByP1() {
-    if (testing) {
-        console.log("filter by p1");
-    };
-    if (planted.plot === 1) {
-        return true;
-    };
-    return false;
-}
-*/
-
-// filterByP2 is currently written based off the format listed on W3 Schools on the lesson about the filter method. 
-function filterByP2(item) {
-    if (testing) {
-        console.log("filter by p2");
-    };
-    if (item.plot === 2) {
-        return true;
-    };
-    return false;
-}
-
 // displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
 function displayPlot1Notes() {
     let p1Filter = planted.filter(function(item) {
@@ -124,16 +100,20 @@ function displayPlot1Notes() {
     };
 }
 
-// displayPlot2Notes has a similar function and problem to that of displayPlot1Notes. 
+// displayPlot2Notes is filtering only the entries that occur in plot 2 of the planted array and displaying those on the plot 2 section when the button is clicked. 
 function displayPlot2Notes() {
-    if (testing) {
-        console.log("plot 2 notes");
-    };
-    let p2Len = planted.filter(filterByP2);
+    let p2Filter = planted.filter(function(item) {
+        return item.plot === "2";
+    });
+    let p2Len = p2Filter.length;
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
-        text += "* "+ p2Len[i].item + " was planted on " + p2Len[i].planted + " in " + p2Len[i].location + 
-        ". \n Estimated harvest is " + p2Len[i].harvest + ". \n \n";
+        text += "* " + p2Filter[i].item + " was planted on " + p2Filter[i].planted + " in " + p2Filter[i].location + 
+        ". \n Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
     };
     plot2Log.innerText = text;
+    if (testing) {
+        console.log("plot 2 notes");
+        console.log(text);
+    };
 }
