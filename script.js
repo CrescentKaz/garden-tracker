@@ -108,7 +108,9 @@ function filterByP2(item) {
 
 // displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
 function displayPlot1Notes() {
-    let p1Filter = planted.filter(planted.plot === 1);
+    let p1Filter = planted.filter(function(item) {
+        return item.plot === "1";
+    });
     let p1Len = p1Filter.length;
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
