@@ -77,7 +77,7 @@ function displayNotes() {
     let text = "";
     for (let i = 0; i < len; i++) {
         text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
-        ". \n Estimated harvest is " + planted[i].harvest + ". \n \n";
+        ". \n --> Estimated harvest is " + planted[i].harvest + ". \n \n";
     };
     gardenNotes.innerText = text;
 }
@@ -91,7 +91,7 @@ function displayPlot1Notes() {
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
         text += "* " + p1Filter[i].item + " was planted on " + p1Filter[i].planted + " in " + p1Filter[i].location + 
-        ". \n Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
+        ". \n --> Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
     };
     plot1Log.innerText = text;
     if (testing) {
@@ -109,7 +109,7 @@ function displayPlot2Notes() {
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
         text += "* " + p2Filter[i].item + " was planted on " + p2Filter[i].planted + " in " + p2Filter[i].location + 
-        ". \n Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
+        ". \n --> Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
     };
     plot2Log.innerText = text;
     if (testing) {
