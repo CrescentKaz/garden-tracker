@@ -18,7 +18,7 @@ body {
 .garden-map {
     margin: auto;
     padding: auto;
-    width: auto;
+    width: 90vw;
 }
 
 .horizontal-content {
@@ -42,8 +42,8 @@ body {
 #plot1Section .garden-location-s {
     min-height: 53.3px;
     min-width: 53.3px;
-    height: 16.7vw;
-    width: 16.7vw;
+    height: 16.8vw;
+    width: 16.8vw;
     border: black solid 1px;
 }
 
@@ -58,8 +58,8 @@ body {
 #plot2Section .garden-location-s {
     min-height: 53.3px;
     min-width: 53.3px;
-    height: 15vw;
-    width: 15vw;
+    height: 15.1vw;
+    width: 15.1vw;
     border: black solid 1px;
 }
 
