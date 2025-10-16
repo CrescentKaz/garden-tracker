@@ -27,7 +27,7 @@ body {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    box: border-box;
+    gap: 0;
 }
 
 .vertical-content {
@@ -36,7 +36,7 @@ body {
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    box: border-box;
+    gap: 0;
 }
 
 #plot1Section .garden-location-s {

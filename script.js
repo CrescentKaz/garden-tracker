@@ -2,7 +2,7 @@ const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");
 
-// set testing to true to display console logs for troubleshoot. set testing to false if you do not wish to generate the console logs. 
+// set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
 
 // the planted array houses all gardening updates. 
@@ -29,7 +29,7 @@ const planted = [
         item: "corn",
         planted: "unknown date",
         harvest: "NA... ants killed the whole plant",
-        removed: ""
+        removed: "unknown date"
     }
 ];
 
