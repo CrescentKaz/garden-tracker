@@ -1,3 +1,5 @@
+import { planted } from './data_log.js';
+
 const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");
@@ -6,7 +8,8 @@ const plot2Log = document.querySelector("#plot2Log");
 let testing = true;
 
 // the planted array houses all gardening updates. 
-const planted = [
+// testing housing this in another file as it might get very long
+/* const planted = [
     {
         plot: "1",
         location: "C13",
@@ -30,8 +33,17 @@ const planted = [
         planted: "unknown date",
         harvest: "NA... ants killed the whole plant",
         removed: "unknown date"
+    },
+    {
+        plot: "1",
+        location: "S4",
+        item: "Broccoli",
+        planted: "October 2024",
+        harvest: "March 2026",
+        removed: ""
     }
 ];
+*/
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
 function showHome() {
@@ -76,8 +88,13 @@ function displayNotes() {
     let len = planted.length;
     let text = "";
     for (let i = 0; i < len; i++) {
-        text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
-        ". \n --> Estimated harvest is " + planted[i].harvest + ". \n \n";
+        if (planted[i].removed !== "") {
+            text += "* " + planted[i].item + " was removed on " + planted[i].removed + " from Plot " + planted[i].plot + ", " + planted[i].location + 
+            ". \n \n";
+        } else {
+            text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
+            ". \n --> Estimated harvest is " + planted[i].harvest + ". \n \n";
+        };
     };
     gardenNotes.innerText = text;
 }
@@ -90,8 +107,13 @@ function displayPlot1Notes() {
     let p1Len = p1Filter.length;
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
-        text += "* " + p1Filter[i].item + " was planted on " + p1Filter[i].planted + " in " + p1Filter[i].location + 
-        ". \n --> Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
+        if (planted[i].removed !== "") {
+            text += "* " + p1Filter[i].item + " was removed on " + p1Filter[i].removed + " from " + p1Filter[i].location + 
+            ". \n \n";
+        } else {
+            text += "* " + p1Filter[i].item + " was planted on " + p1Filter[i].planted + " in " + p1Filter[i].location + 
+            ". \n --> Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
+        };
     };
     plot1Log.innerText = text;
     if (testing) {
@@ -108,8 +130,13 @@ function displayPlot2Notes() {
     let p2Len = p2Filter.length;
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
-        text += "* " + p2Filter[i].item + " was planted on " + p2Filter[i].planted + " in " + p2Filter[i].location + 
-        ". \n --> Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
+        if (planted[i].removed !== "") {
+            text += "* " + p2Filter[i].item + " was removed on " + p2Filter[i].removed + " from " + p2Filter[i].location + 
+            ". \n \n";
+        } else {
+            text += "* " + p2Filter[i].item + " was planted on " + p2Filter[i].planted + " in " + p2Filter[i].location + 
+            ". \n --> Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
+        };
     };
     plot2Log.innerText = text;
     if (testing) {
