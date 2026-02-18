@@ -1,5 +1,5 @@
 // this is the test file for the planted array 
-export const planted = [
+const planted = [
     {
         plot: "1",
         location: "C13",
@@ -33,3 +33,5 @@ export const planted = [
         removed: ""
     }
 ];
+
+export { planted };
