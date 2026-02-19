@@ -1,4 +1,4 @@
-import { planted } from './data_log.js';
+import planted from './data_log.js';
 
 const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
