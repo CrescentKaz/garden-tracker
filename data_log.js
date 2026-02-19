@@ -4,7 +4,7 @@ window.gardenData = [
         plot: "1",
         location: "C13",
         item: "Chocolate Mint",
-        planted: "unknown date",
+        planted: "YYYYMMDD",
         harvest: "as needed",
         removed: ""
     },
@@ -12,7 +12,7 @@ window.gardenData = [
         plot: "1",
         location: "C12",
         item: "Chotolate Mint",
-        planted: "unknown date",
+        planted: "YYYYMMDD",
         harvest: "as needed",
         removed: ""
     },
@@ -28,7 +28,7 @@ window.gardenData = [
         plot: "1",
         location: "S4",
         item: "Broccoli",
-        planted: "October 2024",
+        planted: "20241001",
         harvest: "March 2026",
         removed: ""
     }

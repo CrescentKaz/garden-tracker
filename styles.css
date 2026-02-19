@@ -71,6 +71,10 @@ body {
     border: black solid 1px;
 }
 
+.garden-location-c:hover .garden-location-s:hover {
+    color: var(--colorHover);
+}
+
 .garden-log {
     max-width: 95%;
     height: auto;
