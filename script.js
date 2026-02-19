@@ -1,5 +1,7 @@
-import planted from './data_log.js';
+// this is pulled from another file. edit with caution.
+var planted = window.gardenData;
 
+// constants for this file
 const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");

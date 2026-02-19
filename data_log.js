@@ -1,5 +1,5 @@
 // this is the test file for the planted array 
-const planted = [
+window.gardenData = [
     {
         plot: "1",
         location: "C13",
@@ -33,5 +33,3 @@ const planted = [
         removed: ""
     }
 ];
-
-export { planted };
