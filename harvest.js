@@ -16,7 +16,7 @@ const harvestTable = [
     {
         name: "Broccoli",
         scientificName: "GENUS SPECIES",
-        EOT: 60
+        EOT: 60 /* need check accuracy */
     }
 ];
 
@@ -45,6 +45,6 @@ function calcHarvest() {
             text += "--> " + planted[i].item + " has an estimated harvest date of " + harvestDate + ". \n \n";
         };
     };
-    //gardenNotes.innerText = text;
+    gardenNotes.innerText = text;
 }
 */

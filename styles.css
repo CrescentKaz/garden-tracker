@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
     gap: 0;
+    color: var(--colorEmpty);
 }
 
 .vertical-content {
@@ -37,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     gap: 0;
+    color: var(--colorEmpty);
 }
 
 #plot1Section .garden-location-s {
@@ -71,8 +73,9 @@ body {
     border: black solid 1px;
 }
 
-.garden-location-c:hover .garden-location-s:hover {
-    color: var(--colorHover);
+.garden-location-c:hover, .garden-location-s:hover {
+    background-color: var(--colorHover);
+    color: black;
 }
 
 .garden-log {

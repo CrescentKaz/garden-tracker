@@ -84,9 +84,6 @@ function showNotes() {
 
 // displayNotes shows all entries of the planted array in a more reader friendly format. 
 function displayNotes() {
-    if (testing) {
-        console.log("garden notes");
-    };
     let len = planted.length;
     let text = "";
     for (let i = 0; i < len; i++) {
@@ -99,6 +96,9 @@ function displayNotes() {
         };
     };
     gardenNotes.innerText = text;
+    if (testing) {
+        console.log("all garden notes");
+    };
 }
 
 // displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
@@ -109,7 +109,7 @@ function displayPlot1Notes() {
     let p1Len = p1Filter.length;
     let text = ""; 
     for (let i = 0; i < p1Len; i++) {
-        if (planted[i].removed !== "") {
+        if (p1Filter[i].removed !== "") {
             text += "* " + p1Filter[i].item + " was removed on " + p1Filter[i].removed + " from " + p1Filter[i].location + 
             ". \n \n";
         } else {
@@ -120,7 +120,6 @@ function displayPlot1Notes() {
     plot1Log.innerText = text;
     if (testing) {
         console.log("plot 1 notes");
-        console.log(text);
     };
 }
 
@@ -132,7 +131,7 @@ function displayPlot2Notes() {
     let p2Len = p2Filter.length;
     let text = ""; 
     for (let i = 0; i < p2Len; i++) {
-        if (planted[i].removed !== "") {
+        if (p2Filter[i].removed !== "") {
             text += "* " + p2Filter[i].item + " was removed on " + p2Filter[i].removed + " from " + p2Filter[i].location + 
             ". \n \n";
         } else {
@@ -143,6 +142,5 @@ function displayPlot2Notes() {
     plot2Log.innerText = text;
     if (testing) {
         console.log("plot 2 notes");
-        console.log(text);
     };
 }
