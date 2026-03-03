@@ -1,10 +1,45 @@
 // this is pulled from another file. edit with caution.
 var planted = window.gardenData;
 
-// constants for this file
+// constants for non-garden spaces
 const gardenNotes = document.querySelector("#gardenNotes");
 const plot1Log = document.querySelector("#plot1Log");
 const plot2Log = document.querySelector("#plot2Log");
+
+// constants for plot 1 garden spaces
+const p1c1 = document.querySelector("#p1c1");
+const p1c2 = document.querySelector("#p1c2");
+const p1c3 = document.querySelector("#p1c3");
+const p1c4 = document.querySelector("#p1c4");
+const p1c5 = document.querySelector("#p1c5");
+const p1c6 = document.querySelector("#p1c6");
+const p1c7 = document.querySelector("#p1c7");
+const p1c8 = document.querySelector("#p1c8");
+const p1c9 = document.querySelector("#p1c9");
+const p1c10 = document.querySelector("#p1c10");
+const p1c11 = document.querySelector("#p1c11");
+const p1c12 = document.querySelector("#p1c12");
+const p1c13 = document.querySelector("#p1c13");
+const p1c14 = document.querySelector("#p1c14");
+const p1c15 = document.querySelector("#p1c15");
+const p1c16 = document.querySelector("#p1c16");
+const p1c17 = document.querySelector("#p1c17");
+const p1c18 = document.querySelector("#p1c18");
+const p1c19 = document.querySelector("#p1c19");
+const p1c20 = document.querySelector("#p1c20");
+const p1c21 = document.querySelector("#p1c21");
+const p1c22 = document.querySelector("#p1c22");
+const p1c23 = document.querySelector("#p1c23");
+const p1c24 = document.querySelector("#p1c24");
+const p1s1 = document.querySelector("#p1s1");
+const p1s2 = document.querySelector("#p1s2");
+const p1s3 = document.querySelector("#p1s3");
+const p1s4 = document.querySelector("#p1s4");
+const p1s5 = document.querySelector("#p1s5");
+const p1s6 = document.querySelector("#p1s6");
+const p1s7 = document.querySelector("#p1s7");
+const p1s8 = document.querySelector("#p1s8");
+const p1s9 = document.querySelector("#p1s9");
 
 // set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
