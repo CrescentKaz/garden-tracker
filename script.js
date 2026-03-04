@@ -1,5 +1,6 @@
 // this is pulled from another file. edit with caution.
 var planted = window.gardenData;
+var harvestable = window.harvestTable;
 
 // constants for non-garden spaces
 const gardenNotes = document.querySelector("#gardenNotes");
@@ -44,43 +45,8 @@ const p1s9 = document.querySelector("#p1s9");
 // set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
 
-// the planted array houses all gardening updates. 
-// testing housing this in another file as it might get very long
-/* const planted = [
-    {
-        plot: "1",
-        location: "C13",
-        item: "Chocolate Mint",
-        planted: "unknown date",
-        harvest: "as needed",
-        removed: ""
-    },
-    {
-        plot: "1",
-        location: "C12",
-        item: "Chotolate Mint",
-        planted: "unknown date",
-        harvest: "as needed",
-        removed: ""
-    },
-    {
-        plot: "2",
-        location: "S23?",
-        item: "corn",
-        planted: "unknown date",
-        harvest: "NA... ants killed the whole plant",
-        removed: "unknown date"
-    },
-    {
-        plot: "1",
-        location: "S4",
-        item: "Broccoli",
-        planted: "October 2024",
-        harvest: "March 2026",
-        removed: ""
-    }
-];
-*/
+let pFilter = "";
+let pLen = pFilter.length;
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
 function showHome() {
@@ -88,6 +54,9 @@ function showHome() {
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
     notesSection.style.display = "none";
+    if (testing) {
+        console.log("home button clicked");
+    };
 }
 
 // triggered by a button. shows only the content related to plot 1.
@@ -96,7 +65,16 @@ function showPlot1() {
     plot1Section.style.display = "contents";
     plot2Section.style.display = "none";
     notesSection.style.display = "none";
-    displayPlot1Notes();
+//    displayPlot1Notes();
+    let pFilter = planted.filter(function(item) {
+        return item.plot === "1";
+    });
+    noteText();
+    plot1Log.innerText = text;
+    plantedColor()
+    if (testing) {
+        console.log("plot 1 button clicked");
+    };
 }
 
 // triggered by a button. shows only the content related to plot 2.
@@ -105,7 +83,16 @@ function showPlot2() {
     plot1Section.style.display = "none";
     plot2Section.style.display = "contents";
     notesSection.style.display = "none";
-    displayPlot2Notes();
+ //   displayPlot2Notes();
+    let pFilter = planted.filter(function(item) {
+        return item.plot === "2";
+    });
+    noteText();
+    plot2Log.innerText = text;
+    plantedColor()
+    if (testing) {
+        console.log("plot 2 button clicked");
+    };
 }
 
 // triggered by a button, shows only the content in the Notes section.
@@ -114,9 +101,16 @@ function showNotes() {
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
     notesSection.style.display = "contents";
-    displayNotes();
+//    displayNotes();
+    let pFilter = planted;
+    noteText();
+    gardenNotes.innerText = text;
+    if (testing) {
+        console.log("all notes button clicked");
+    };
 }
 
+/*
 // displayNotes shows all entries of the planted array in a more reader friendly format. 
 function displayNotes() {
     let len = planted.length;
@@ -138,7 +132,7 @@ function displayNotes() {
 
 // displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
 function displayPlot1Notes() {
-    let p1Filter = planted.filter(function(item) {
+    let pFilter = planted.filter(function(item) {
         return item.plot === "1";
     });
     let p1Len = p1Filter.length;
@@ -179,3 +173,61 @@ function displayPlot2Notes() {
         console.log("plot 2 notes");
     };
 }
+*/
+
+function noteText() {
+    let text = "";
+    for (let i = 0; i < pLen; i++) {
+        if (pFilter[i].removed !== "") {
+            text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
+            ". \n \n";
+        } else {
+            text += "* " + pFilter[i].item + " was planted on " + pFilter[i].planted + " in " + pFilter[i].location + 
+            ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
+        };
+    };
+    if (testing) {
+        console.log("note text triggered");
+    };
+    return text;
+}
+
+function plantedColor() {
+    for (let i = 0; i < pLen; i++) {
+        let locationName = "p" + pFilter[i].plot + pFilter[i].location;
+        if (pFilter[i].removed !== "") {
+            document.getElementById(locationName).style.backgroundColor = "var(--colorEmpty)";
+        } else {
+            document.getElementById(locationName).style.backgroundColor = "var(--colorPlanted)";
+        };
+    };
+    if (testing) {
+        console.log("planted color triggered");
+    };
+}
+
+/* this function needs double checking before live testing
+function calcHarvest() {
+    let text = "";
+    for (let i = 0; i < plen; i++) {
+        if (pFilter[i].removed === "") {
+            const harvestDate = new Date(pFilter[i].planted);
+            let item = pFilter[i].item;
+            let EOT = "";
+            for (let o = 0; o < harvestTable.length; o++) {
+                if (item = harvestTable[o].name) {
+                    EOT = harvestTable[o].EOT;
+                } else {};
+            };
+            harvestDate.setDate(harvestDate.getDate() + EOT);
+            text += "--> " + planted[i].item + " has an estimated harvest date of " + harvestDate + ". \n \n";
+        } else {
+            console.log("error found with calcHarvest for p" + pFilter[i].plot + pFilter[i].location)
+        };
+    };
+    gardenNotes.innerText = text;
+    if (testing) {
+        console.log("calculating harvest dates");
+    };
+}
+*/

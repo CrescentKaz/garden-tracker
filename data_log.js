@@ -2,7 +2,7 @@
 window.gardenData = [
     {
         plot: "1",
-        location: "C13",
+        location: "c13",
         item: "Chocolate Mint",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -10,15 +10,15 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C12",
-        item: "Chotolate Mint",
+        location: "c12",
+        item: "Chocolate Mint",
         planted: "YYYYMMDD",
         harvest: "as needed",
         removed: ""
     },
     {
         plot: "2",
-        location: "S23?",
+        location: "s23",
         item: "Corn",
         planted: "unknown date",
         harvest: "NA... ants killed the whole plant",
@@ -26,7 +26,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S4",
+        location: "s4",
         item: "Broccoli",
         planted: "20241001",
         harvest: "March 2026",
@@ -34,7 +34,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C9",
+        location: "c9",
         item: "Parsley",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -42,7 +42,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C10",
+        location: "c10",
         item: "Parsley",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -50,7 +50,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C11",
+        location: "c11",
         item: "Parsley",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -58,7 +58,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C6",
+        location: "c6",
         item: "Strawberries",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -66,7 +66,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C7",
+        location: "c7",
         item: "Strawberries",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -74,7 +74,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "C8",
+        location: "c8",
         item: "Strawberries",
         planted: "YYYYMMDD",
         harvest: "as needed",
@@ -82,7 +82,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S1",
+        location: "s1",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
@@ -90,7 +90,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S2",
+        location: "s2",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
@@ -98,7 +98,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S3",
+        location: "s3",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
@@ -106,7 +106,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S7",
+        location: "s7",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
@@ -114,7 +114,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S8",
+        location: "s8",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
@@ -122,7 +122,7 @@ window.gardenData = [
     },
     {
         plot: "1",
-        location: "S9",
+        location: "s9",
         item: "Peas",
         planted: "YYYYMMDD",
         harvest: "2026",
