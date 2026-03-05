@@ -46,7 +46,7 @@ const p1s9 = document.querySelector("#p1s9");
 let testing = true;
 
 let text = "";
-let pFilter = "";
+let pFilter = [];
 let pLen = pFilter.length;
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
