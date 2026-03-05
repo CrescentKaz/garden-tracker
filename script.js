@@ -45,6 +45,7 @@ const p1s9 = document.querySelector("#p1s9");
 // set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
 
+let text = "";
 let pFilter = "";
 let pLen = pFilter.length;
 
@@ -176,7 +177,6 @@ function displayPlot2Notes() {
 */
 
 function noteText() {
-    let text = "";
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
             text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
@@ -208,7 +208,6 @@ function plantedColor() {
 
 /* this function needs double checking before live testing
 function calcHarvest() {
-    let text = "";
     for (let i = 0; i < plen; i++) {
         if (pFilter[i].removed === "") {
             const harvestDate = new Date(pFilter[i].planted);
