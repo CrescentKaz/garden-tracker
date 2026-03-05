@@ -189,7 +189,7 @@ function noteText() {
             ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
         };
     };
-//    return text;
+    return text;
 }
 
 function plantedColor() {
