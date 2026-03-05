@@ -46,7 +46,7 @@ const p1s9 = document.querySelector("#p1s9");
 let testing = true;
 
 let text = "";
-//let pFilter = [];
+let pFilter = [];
 let pLen = pFilter.length;
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
@@ -177,15 +177,24 @@ function filterSwitchtrack() {
         console.log("filter switchtrack triggered");
     };
     if (plot1Section.style.display = "contents") {
-        let pFilter = planted.filter(function(item) {
+        pFilter = planted.filter(function(item) {
         return item.plot === "1";
         });
+        if (testing) {
+            console.log("filter switched to plot 1");
+        };
     } else if (plot2Section.style.display = "contents") {
-        let pFilter = planted.filter(function(item) {
+        pFilter = planted.filter(function(item) {
         return item.plot === "2";
         });
+        if (testing) {
+            console.log("filter switched to plot 2");
+        };
     } else if (notesSection.style.display = "contents") {
-        let pFilter = planted;
+        pFilter = planted;
+        if (testing) {
+            console.log("filter switched to all");
+        };
     } else {
         console.log("switchtrack failed");
     };
