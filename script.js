@@ -51,17 +51,20 @@ let pLen = pFilter.length;
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
 function showHome() {
+    if (testing) {
+        console.log("home button clicked");
+    };
     homeSection.style.display = "contents";
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
     notesSection.style.display = "none";
-    if (testing) {
-        console.log("home button clicked");
-    };
 }
 
 // triggered by a button. shows only the content related to plot 1.
 function showPlot1() {
+    if (testing) {
+        console.log("plot 1 button clicked");
+    };
     homeSection.style.display = "none";
     plot1Section.style.display = "contents";
     plot2Section.style.display = "none";
@@ -73,13 +76,13 @@ function showPlot1() {
     noteText();
     plot1Log.innerText = text;
     plantedColor()
-    if (testing) {
-        console.log("plot 1 button clicked");
-    };
 }
 
 // triggered by a button. shows only the content related to plot 2.
 function showPlot2() {
+    if (testing) {
+        console.log("plot 2 button clicked");
+    };
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
     plot2Section.style.display = "contents";
@@ -91,13 +94,13 @@ function showPlot2() {
     noteText();
     plot2Log.innerText = text;
     plantedColor()
-    if (testing) {
-        console.log("plot 2 button clicked");
-    };
 }
 
 // triggered by a button, shows only the content in the Notes section.
 function showNotes() {
+    if (testing) {
+        console.log("all notes button clicked");
+    };
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
@@ -106,9 +109,6 @@ function showNotes() {
     let pFilter = planted;
     noteText();
     gardenNotes.innerText = text;
-    if (testing) {
-        console.log("all notes button clicked");
-    };
 }
 
 /*
@@ -177,6 +177,9 @@ function displayPlot2Notes() {
 */
 
 function noteText() {
+    if (testing) {
+        console.log("note text triggered");
+    };
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
             text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
@@ -186,13 +189,13 @@ function noteText() {
             ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
         };
     };
-    if (testing) {
-        console.log("note text triggered");
-    };
-    return text;
+//    return text;
 }
 
 function plantedColor() {
+    if (testing) {
+        console.log("planted color triggered");
+    };
     for (let i = 0; i < pLen; i++) {
         let locationName = "p" + pFilter[i].plot + pFilter[i].location;
         if (pFilter[i].removed !== "") {
@@ -200,9 +203,6 @@ function plantedColor() {
         } else {
             document.getElementById(locationName).style.backgroundColor = "var(--colorPlanted)";
         };
-    };
-    if (testing) {
-        console.log("planted color triggered");
     };
 }
 
