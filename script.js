@@ -46,7 +46,7 @@ const p1s9 = document.querySelector("#p1s9");
 let testing = true;
 
 let text = "";
-let pFilter = [];
+//let pFilter = [];
 let pLen = pFilter.length;
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
@@ -70,9 +70,7 @@ function showPlot1() {
     plot2Section.style.display = "none";
     notesSection.style.display = "none";
 //    displayPlot1Notes();
-    let pFilter = planted.filter(function(item) {
-        return item.plot === "1";
-    });
+    filterSwitchtrack()
     noteText();
     plot1Log.innerText = text;
     plantedColor()
@@ -88,9 +86,7 @@ function showPlot2() {
     plot2Section.style.display = "contents";
     notesSection.style.display = "none";
  //   displayPlot2Notes();
-    let pFilter = planted.filter(function(item) {
-        return item.plot === "2";
-    });
+    filterSwitchtrack()
     noteText();
     plot2Log.innerText = text;
     plantedColor()
@@ -106,7 +102,7 @@ function showNotes() {
     plot2Section.style.display = "none";
     notesSection.style.display = "contents";
 //    displayNotes();
-    let pFilter = planted;
+    filterSwitchtrack()
     noteText();
     gardenNotes.innerText = text;
 }
@@ -175,6 +171,25 @@ function displayPlot2Notes() {
     };
 }
 */
+
+function filterSwitchtrack() {
+    if (testing) {
+        console.log("filter switchtrack triggered");
+    };
+    if (plot1Section.style.display = "contents") {
+        let pFilter = planted.filter(function(item) {
+        return item.plot === "1";
+        });
+    } else if (plot2Section.style.display = "contents") {
+        let pFilter = planted.filter(function(item) {
+        return item.plot === "2";
+        });
+    } else if (notesSection.style.display = "contents") {
+        let pFilter = planted;
+    } else {
+        console.log("switchtrack failed");
+    };
+}
 
 function noteText() {
     if (testing) {
