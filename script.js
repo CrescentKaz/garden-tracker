@@ -75,7 +75,6 @@ function showPlot1() {
 //    displayPlot1Notes();
     filterSwitchtrack()
     noteText();
-    plot1Log.innerText = text;
     plantedColor()
 }
 
@@ -92,7 +91,6 @@ function showPlot2() {
  //   displayPlot2Notes();
     filterSwitchtrack()
     noteText();
-    plot2Log.innerText = text;
     plantedColor()
 }
 
@@ -109,7 +107,6 @@ function showNotes() {
 //    displayNotes();
     filterSwitchtrack()
     noteText();
-    gardenNotes.innerText = text;
 }
 
 /*
@@ -222,7 +219,15 @@ function noteText() {
             ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
         };
     };
-    return text;
+    if (page === "plot1") {
+        plot1Log.innerText = text;
+    } else if (page === "plot2") {
+        plot2Log.innerText = text;
+    } else if (page === "notes") {
+        gardenNotes.innerText = text;
+    } else {
+        console.log("note text failed");
+    };
 }
 
 function plantedColor() {
