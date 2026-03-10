@@ -48,12 +48,14 @@ let testing = true;
 let text = "";
 let pFilter = [];
 let pLen = pFilter.length;
+let page = "";
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
 function showHome() {
     if (testing) {
         console.log("home button clicked");
     };
+    page = "home";
     homeSection.style.display = "contents";
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
@@ -65,6 +67,7 @@ function showPlot1() {
     if (testing) {
         console.log("plot 1 button clicked");
     };
+    page = "plot1";
     homeSection.style.display = "none";
     plot1Section.style.display = "contents";
     plot2Section.style.display = "none";
@@ -81,6 +84,7 @@ function showPlot2() {
     if (testing) {
         console.log("plot 2 button clicked");
     };
+    page = "plot2";
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
     plot2Section.style.display = "contents";
@@ -97,6 +101,7 @@ function showNotes() {
     if (testing) {
         console.log("all notes button clicked");
     };
+    page = "notes";
     homeSection.style.display = "none";
     plot1Section.style.display = "none";
     plot2Section.style.display = "none";
@@ -176,24 +181,28 @@ function filterSwitchtrack() {
     if (testing) {
         console.log("filter switchtrack triggered");
     };
-    if (plot1Section.style.display = "contents") {
+    if (page === "plot1") {
         pFilter = planted.filter(function(item) {
         return item.plot === "1";
         });
         if (testing) {
             console.log("filter switched to plot 1");
         };
-    } else if (plot2Section.style.display = "contents") {
+    } else if (page === "plot2") {
         pFilter = planted.filter(function(item) {
         return item.plot === "2";
         });
         if (testing) {
             console.log("filter switched to plot 2");
         };
-    } else if (notesSection.style.display = "contents") {
+    } else if (page === "notes") {
         pFilter = planted;
         if (testing) {
-            console.log("filter switched to all");
+            console.log("filter switched to all notes");
+        };
+    } else if (page === "home") {
+        if (testing) {
+            console.log("filter switched to home");
         };
     } else {
         console.log("switchtrack failed");
