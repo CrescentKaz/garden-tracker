@@ -11,33 +11,103 @@ when the item is theoretically harvestable, need to change the color of the loca
 
 window.harvestTable = [
     {
-        name: "Broccoli",
+        name: "Chamomile",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Feb-May and Sept-Oct",
+        EOT: 80,
+        daysToGerm: "7-14 days",
+        plantingDepth: "Do not cover",
+        spacing: "6in",
+        height: "20-30in"
     },
     {
-        name: "Corn",
+        name: "Sweet Marjoram",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Jan-Feb",
+        EOT: 60,
+        daysToGerm: "8-10 days",
+        plantingDepth: "1/4in",
+        spacing: "6in",
+        height: "18in"
     },
     {
-        name: "Parsley",
+        name: "Munstead Lavender",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Feb-May",
+        EOT: 85,
+        daysToGerm: "10-28 days",
+        plantingDepth: "1/4 n",
+        spacing: "12in",
+        height: "18-24in"
     },
     {
-        name: "Strawberries",
+        name: "Sweet Corn (Stowell's Evergreen)",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Mar-Aug",
+        EOT: 90,
+        daysToGerm: "7-10 days",
+        plantingDepth: "1/2in",
+        spacing: "20in x 3ft",
+        height: ""
     },
     {
-        name: "Peas",
+        name: "Alaska Peas",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Jan-Mar and Sept",
+        EOT: 58,
+        daysToGerm: "8-12 days",
+        plantingDepth: "1.5in",
+        spacing: "2in x 2.5ft",
+        height: "2.5ft"
     },
     {
-        name: "Chocolate Mint",
+        name: "Pumpkin (Early Sugar or Pie)",
         scientificName: "GENUS SPECIES",
-        EOT: 60 /* need check accuracy */
+        SOT: "Mar-Jun",
+        EOT: 90,
+        daysToGerm: "8-10 days",
+        plantingDepth: "1in",
+        spacing: "8ft x 8ft",
+        height: ""
+    },
+    {
+        name: "Peppermint",
+        scientificName: "GENUS SPECIES",
+        SOT: "Feb-May",
+        EOT: 60,
+        daysToGerm: "12-16 days",
+        plantingDepth: "1/8in - 1/4in",
+        spacing: "12in",
+        height: "18in"
+    },
+    {
+        name: "Sunflower (Evening Sun)",
+        scientificName: "GENUS SPECIES",
+        SOT: "Mar-Jul",
+        EOT: 85,
+        daysToGerm: "7-14 days",
+        plantingDepth: "1in",
+        spacing: "18-24in",
+        height: "6ft"
+    },
+    {
+        name: "Parsley (Moss Curled)",
+        scientificName: "GENUS SPECIES",
+        SOT: "Jan-Apr and Aug-Oct",
+        EOT: 75,
+        daysToGerm: "21-28 days",
+        plantingDepth: "1/4in",
+        spacing: "10in",
+        height: "12-16in"
+    },
+    {
+        name: "Oregano",
+        scientificName: "Origanum vulgare",
+        SOT: "Feb-May and Aug-Sept",
+        EOT: 85,
+        daysToGerm: "8-14 days",
+        plantingDepth: "1/8in",
+        spacing: "12in",
+        height: "14-22in"
     },
 ];
