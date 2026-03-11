@@ -209,6 +209,7 @@ function filterSwitchtrack() {
 function noteText() {
     if (testing) {
         console.log("note text triggered");
+        console.log(pFilter);
     };
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
@@ -230,6 +231,7 @@ function noteText() {
     };
 }
 
+/* this function commented out for troubleshooting the noteText function in isolation
 function plantedColor() {
     if (testing) {
         console.log("planted color triggered");
@@ -243,6 +245,7 @@ function plantedColor() {
         };
     };
 }
+*/
 
 /* this function needs double checking before live testing
 function calcHarvest() {
