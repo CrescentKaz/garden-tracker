@@ -210,6 +210,7 @@ function noteText() {
     if (testing) {
         console.log("note text triggered");
         console.log(pFilter);
+        console.log(pLen);
     };
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
