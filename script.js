@@ -211,6 +211,7 @@ function noteText() {
         console.log("note text triggered");
     };
     let pLen = pFilter.length;
+    text = "";
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
             text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
@@ -221,7 +222,7 @@ function noteText() {
         };
     };
     if (testing) {
-        console.log(pLen);
+        console.log("# of log entries is " + pLen);
     }
     if (page === "plot1") {
         plot1Log.innerText = text;
