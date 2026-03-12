@@ -73,9 +73,9 @@ function showPlot1() {
     plot2Section.style.display = "none";
     notesSection.style.display = "none";
 //    displayPlot1Notes();
-    filterSwitchtrack()
+    filterSwitchtrack();
     noteText();
-    plantedColor()
+    plantedColor();
 }
 
 // triggered by a button. shows only the content related to plot 2.
@@ -89,9 +89,9 @@ function showPlot2() {
     plot2Section.style.display = "contents";
     notesSection.style.display = "none";
  //   displayPlot2Notes();
-    filterSwitchtrack()
+    filterSwitchtrack();
     noteText();
-    plantedColor()
+    plantedColor();
 }
 
 // triggered by a button, shows only the content in the Notes section.
@@ -105,7 +105,7 @@ function showNotes() {
     plot2Section.style.display = "none";
     notesSection.style.display = "contents";
 //    displayNotes();
-    filterSwitchtrack()
+    filterSwitchtrack();
     noteText();
 }
 
