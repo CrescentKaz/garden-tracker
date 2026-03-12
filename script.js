@@ -177,6 +177,7 @@ function filterSwitchtrack() {
     if (testing) {
         console.log("filter switchtrack triggered");
     };
+    pFilter = [];
     if (page === "plot1") {
         pFilter = planted.filter(function(item) {
         return item.plot === "1";
