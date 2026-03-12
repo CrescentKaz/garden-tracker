@@ -47,7 +47,6 @@ let testing = true;
 
 let text = "";
 let pFilter = [];
-let pLen = pFilter.length;
 let page = "";
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
@@ -209,9 +208,8 @@ function filterSwitchtrack() {
 function noteText() {
     if (testing) {
         console.log("note text triggered");
-        console.log(pFilter);
-        console.log(pLen);
     };
+    let pLen = pFilter.length;
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
             text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
@@ -221,6 +219,9 @@ function noteText() {
             ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
         };
     };
+    if (testing) {
+        console.log(pLen);
+    }
     if (page === "plot1") {
         plot1Log.innerText = text;
     } else if (page === "plot2") {
