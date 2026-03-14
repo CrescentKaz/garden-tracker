@@ -235,7 +235,6 @@ function noteText() {
     };
 }
 
-/* this function commented out for troubleshooting the noteText function in isolation
 function plantedColor() {
     if (testing) {
         console.log("planted color triggered");
@@ -249,7 +248,6 @@ function plantedColor() {
         };
     };
 }
-*/
 
 /* this function needs double checking before live testing
 function calcHarvest() {
