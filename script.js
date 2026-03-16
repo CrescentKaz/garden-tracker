@@ -3,44 +3,45 @@ var planted = window.gardenData;
 var harvestable = window.harvestTable;
 
 // constants for non-garden spaces
+const plotTitle = document.querySelector("#plotTitle");
+const plotLogTitle = document.querySelector("#plotLogTitle");
+const plotLog = document.querySelector("#plotLog");
 const gardenNotes = document.querySelector("#gardenNotes");
-const plot1Log = document.querySelector("#plot1Log");
-const plot2Log = document.querySelector("#plot2Log");
 
 // constants for plot 1 garden spaces
-const p1c1 = document.querySelector("#p1c1");
-const p1c2 = document.querySelector("#p1c2");
-const p1c3 = document.querySelector("#p1c3");
-const p1c4 = document.querySelector("#p1c4");
-const p1c5 = document.querySelector("#p1c5");
-const p1c6 = document.querySelector("#p1c6");
-const p1c7 = document.querySelector("#p1c7");
-const p1c8 = document.querySelector("#p1c8");
-const p1c9 = document.querySelector("#p1c9");
-const p1c10 = document.querySelector("#p1c10");
-const p1c11 = document.querySelector("#p1c11");
-const p1c12 = document.querySelector("#p1c12");
-const p1c13 = document.querySelector("#p1c13");
-const p1c14 = document.querySelector("#p1c14");
-const p1c15 = document.querySelector("#p1c15");
-const p1c16 = document.querySelector("#p1c16");
-const p1c17 = document.querySelector("#p1c17");
-const p1c18 = document.querySelector("#p1c18");
-const p1c19 = document.querySelector("#p1c19");
-const p1c20 = document.querySelector("#p1c20");
-const p1c21 = document.querySelector("#p1c21");
-const p1c22 = document.querySelector("#p1c22");
-const p1c23 = document.querySelector("#p1c23");
-const p1c24 = document.querySelector("#p1c24");
-const p1s1 = document.querySelector("#p1s1");
-const p1s2 = document.querySelector("#p1s2");
-const p1s3 = document.querySelector("#p1s3");
-const p1s4 = document.querySelector("#p1s4");
-const p1s5 = document.querySelector("#p1s5");
-const p1s6 = document.querySelector("#p1s6");
-const p1s7 = document.querySelector("#p1s7");
-const p1s8 = document.querySelector("#p1s8");
-const p1s9 = document.querySelector("#p1s9");
+const c1 = document.querySelector("#c1");
+const c2 = document.querySelector("#c2");
+const c3 = document.querySelector("#c3");
+const c4 = document.querySelector("#c4");
+const c5 = document.querySelector("#c5");
+const c6 = document.querySelector("#c6");
+const c7 = document.querySelector("#c7");
+const c8 = document.querySelector("#c8");
+const c9 = document.querySelector("#c9");
+const c10 = document.querySelector("#c10");
+const c11 = document.querySelector("#c11");
+const c12 = document.querySelector("#c12");
+const c13 = document.querySelector("#c13");
+const c14 = document.querySelector("#c14");
+const c15 = document.querySelector("#c15");
+const c16 = document.querySelector("#c16");
+const c17 = document.querySelector("#c17");
+const c18 = document.querySelector("#c18");
+const c19 = document.querySelector("#c19");
+const c20 = document.querySelector("#c20");
+const c21 = document.querySelector("#c21");
+const c22 = document.querySelector("#c22");
+const c23 = document.querySelector("#c23");
+const c24 = document.querySelector("#c24");
+const s1 = document.querySelector("#s1");
+const s2 = document.querySelector("#s2");
+const s3 = document.querySelector("#s3");
+const s4 = document.querySelector("#s4");
+const s5 = document.querySelector("#s5");
+const s6 = document.querySelector("#s6");
+const s7 = document.querySelector("#s7");
+const s8 = document.querySelector("#s8");
+const s9 = document.querySelector("#s9");
 
 // set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
 let testing = true;
@@ -56,8 +57,7 @@ function showHome() {
     };
     page = "home";
     homeSection.style.display = "contents";
-    plot1Section.style.display = "none";
-    plot2Section.style.display = "none";
+    plotSection.style.display = "none";
     notesSection.style.display = "none";
 }
 
@@ -68,10 +68,10 @@ function showPlot1() {
     };
     page = "plot1";
     homeSection.style.display = "none";
-    plot1Section.style.display = "contents";
-    plot2Section.style.display = "none";
+    plotSection.style.display = "contents";
     notesSection.style.display = "none";
-//    displayPlot1Notes();
+    plotTitle.innerText = "Garden Plot 1";
+    plotLogTitle.innerText = "Plot 1 Log";
     filterSwitchtrack();
     noteText();
     plantedColor();
@@ -84,10 +84,26 @@ function showPlot2() {
     };
     page = "plot2";
     homeSection.style.display = "none";
-    plot1Section.style.display = "none";
-    plot2Section.style.display = "contents";
+    plotSection.style.display = "contents";
     notesSection.style.display = "none";
- //   displayPlot2Notes();
+    plotTitle.innerText = "Garden Plot 2";
+    plotLogTitle.innerText = "Plot 2 Log";
+    filterSwitchtrack();
+    noteText();
+    plantedColor();
+}
+
+// triggered by a button. shows only the content related to plot 3.
+function showPlot3() {
+    if (testing) {
+        console.log("plot 3 button clicked");
+    };
+    page = "plot3";
+    homeSection.style.display = "none";
+    plotSection.style.display = "contents";
+    notesSection.style.display = "none";
+    plotTitle.innerText = "Garden Plot 3";
+    plotLogTitle.innerText = "Plot 3 Log";
     filterSwitchtrack();
     noteText();
     plantedColor();
@@ -100,78 +116,11 @@ function showNotes() {
     };
     page = "notes";
     homeSection.style.display = "none";
-    plot1Section.style.display = "none";
-    plot2Section.style.display = "none";
+    plotSection.style.display = "none";
     notesSection.style.display = "contents";
-//    displayNotes();
     filterSwitchtrack();
     noteText();
 }
-
-/*
-// displayNotes shows all entries of the planted array in a more reader friendly format. 
-function displayNotes() {
-    let len = planted.length;
-    let text = "";
-    for (let i = 0; i < len; i++) {
-        if (planted[i].removed !== "") {
-            text += "* " + planted[i].item + " was removed on " + planted[i].removed + " from Plot " + planted[i].plot + ", " + planted[i].location + 
-            ". \n \n";
-        } else {
-            text += "* " + planted[i].item + " was planted on " + planted[i].planted + " in Plot " + planted[i].plot + ", " + planted[i].location + 
-            ". \n --> Estimated harvest is " + planted[i].harvest + ". \n \n";
-        };
-    };
-    gardenNotes.innerText = text;
-    if (testing) {
-        console.log("all garden notes");
-    };
-}
-
-// displayPlot1Notes is filtering only the entries that occur in plot 1 of the planted array and displaying those on the plot 1 section when the button is clicked.
-function displayPlot1Notes() {
-    let pFilter = planted.filter(function(item) {
-        return item.plot === "1";
-    });
-    let p1Len = p1Filter.length;
-    let text = ""; 
-    for (let i = 0; i < p1Len; i++) {
-        if (p1Filter[i].removed !== "") {
-            text += "* " + p1Filter[i].item + " was removed on " + p1Filter[i].removed + " from " + p1Filter[i].location + 
-            ". \n \n";
-        } else {
-            text += "* " + p1Filter[i].item + " was planted on " + p1Filter[i].planted + " in " + p1Filter[i].location + 
-            ". \n --> Estimated harvest is " + p1Filter[i].harvest + ". \n \n";
-        };
-    };
-    plot1Log.innerText = text;
-    if (testing) {
-        console.log("plot 1 notes");
-    };
-}
-
-// displayPlot2Notes is filtering only the entries that occur in plot 2 of the planted array and displaying those on the plot 2 section when the button is clicked. 
-function displayPlot2Notes() {
-    let p2Filter = planted.filter(function(item) {
-        return item.plot === "2";
-    });
-    let p2Len = p2Filter.length;
-    let text = ""; 
-    for (let i = 0; i < p2Len; i++) {
-        if (p2Filter[i].removed !== "") {
-            text += "* " + p2Filter[i].item + " was removed on " + p2Filter[i].removed + " from " + p2Filter[i].location + 
-            ". \n \n";
-        } else {
-            text += "* " + p2Filter[i].item + " was planted on " + p2Filter[i].planted + " in " + p2Filter[i].location + 
-            ". \n --> Estimated harvest is " + p2Filter[i].harvest + ". \n \n";
-        };
-    };
-    plot2Log.innerText = text;
-    if (testing) {
-        console.log("plot 2 notes");
-    };
-}
-*/
 
 function filterSwitchtrack() {
     if (testing) {
@@ -191,6 +140,13 @@ function filterSwitchtrack() {
         });
         if (testing) {
             console.log("filter switched to plot 2");
+        };
+    } else if (page === "plot3") {
+        pFilter = planted.filter(function(item) {
+        return item.plot === "3";
+        });
+        if (testing) {
+            console.log("filter switched to plot 3");
         };
     } else if (page === "notes") {
         pFilter = planted;
@@ -224,12 +180,10 @@ function noteText() {
     if (testing) {
         console.log("# of log entries is " + pLen);
     }
-    if (page === "plot1") {
-        plot1Log.innerText = text;
-    } else if (page === "plot2") {
-        plot2Log.innerText = text;
-    } else if (page === "notes") {
+    if (page === "notes") {
         gardenNotes.innerText = text;
+    } else if (page = 1 || 2 || 3) {
+        plotLog.innerText = text;
     } else {
         console.log("note text failed");
     };

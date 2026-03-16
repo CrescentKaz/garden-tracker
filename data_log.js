@@ -1,6 +1,22 @@
 // this is the test file for the planted array 
 window.gardenData = [
     {
+        plot: "2",
+        location: "",
+        item: "TESTING",
+        planted: "YYYYMMDD",
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: "3",
+        location: "",
+        item: "TESTING",
+        planted: "YYYYMMDD",
+        harvest: "",
+        removed: ""
+    },
+    {
         plot: "1",
         location: "c13",
         item: "Chocolate Mint",
@@ -15,14 +31,6 @@ window.gardenData = [
         planted: "YYYYMMDD",
         harvest: "as needed",
         removed: ""
-    },
-    {
-        plot: "2",
-        location: "s23",
-        item: "Corn",
-        planted: "unknown date",
-        harvest: "NA... ants killed the whole plant",
-        removed: "unknown date"
     },
     {
         plot: "1",
@@ -127,5 +135,29 @@ window.gardenData = [
         planted: "YYYYMMDD",
         harvest: "2026",
         removed: ""
-    }
+    },
+    {
+        plot: "1",
+        location: "c1",
+        item: "Basil",
+        planted: "20260314",
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: "1",
+        location: "c3",
+        item: "Basil",
+        planted: "20260314",
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: "1",
+        location: "c5",
+        item: "Basil",
+        planted: "20260314",
+        harvest: "",
+        removed: ""
+    },
 ];

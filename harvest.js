@@ -13,6 +13,7 @@ window.harvestTable = [
     {
         name: "Chamomile",
         scientificName: "GENUS SPECIES",
+        nickname: "chamomile",
         SOT: "Feb-May and Sept-Oct",
         EOT: 80,
         daysToGerm: "7-14 days",
@@ -23,6 +24,7 @@ window.harvestTable = [
     {
         name: "Sweet Marjoram",
         scientificName: "GENUS SPECIES",
+        nickname: "marjoram",
         SOT: "Jan-Feb",
         EOT: 60,
         daysToGerm: "8-10 days",
@@ -33,6 +35,7 @@ window.harvestTable = [
     {
         name: "Munstead Lavender",
         scientificName: "GENUS SPECIES",
+        nickname: "lavender",
         SOT: "Feb-May",
         EOT: 85,
         daysToGerm: "10-28 days",
@@ -43,6 +46,7 @@ window.harvestTable = [
     {
         name: "Sweet Corn (Stowell's Evergreen)",
         scientificName: "GENUS SPECIES",
+        nickname: "corn",
         SOT: "Mar-Aug",
         EOT: 90,
         daysToGerm: "7-10 days",
@@ -53,6 +57,7 @@ window.harvestTable = [
     {
         name: "Alaska Peas",
         scientificName: "GENUS SPECIES",
+        nickname: "peas",
         SOT: "Jan-Mar and Sept",
         EOT: 58,
         daysToGerm: "8-12 days",
@@ -63,6 +68,7 @@ window.harvestTable = [
     {
         name: "Pumpkin (Early Sugar or Pie)",
         scientificName: "GENUS SPECIES",
+        nickname: "pumpkin",
         SOT: "Mar-Jun",
         EOT: 90,
         daysToGerm: "8-10 days",
@@ -73,6 +79,7 @@ window.harvestTable = [
     {
         name: "Peppermint",
         scientificName: "GENUS SPECIES",
+        nickname: "peppermint",
         SOT: "Feb-May",
         EOT: 60,
         daysToGerm: "12-16 days",
@@ -83,6 +90,7 @@ window.harvestTable = [
     {
         name: "Sunflower (Evening Sun)",
         scientificName: "GENUS SPECIES",
+        nickname: "sunflower",
         SOT: "Mar-Jul",
         EOT: 85,
         daysToGerm: "7-14 days",
@@ -93,6 +101,7 @@ window.harvestTable = [
     {
         name: "Parsley (Moss Curled)",
         scientificName: "GENUS SPECIES",
+        nickname: "parsley",
         SOT: "Jan-Apr and Aug-Oct",
         EOT: 75,
         daysToGerm: "21-28 days",
@@ -103,6 +112,7 @@ window.harvestTable = [
     {
         name: "Oregano",
         scientificName: "Origanum vulgare",
+        nickname: "oregano",
         SOT: "Feb-May and Aug-Sept",
         EOT: 85,
         daysToGerm: "8-14 days",
