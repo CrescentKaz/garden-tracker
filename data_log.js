@@ -3,7 +3,7 @@ window.gardenData = [
     {
         plot: "2",
         location: "",
-        item: "TESTING",
+        item: "TESTING2",
         planted: "YYYYMMDD",
         harvest: "",
         removed: ""
@@ -11,7 +11,7 @@ window.gardenData = [
     {
         plot: "3",
         location: "",
-        item: "TESTING",
+        item: "TESTING3",
         planted: "YYYYMMDD",
         harvest: "",
         removed: ""
