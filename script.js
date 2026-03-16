@@ -1,6 +1,9 @@
 // this is pulled from another file. edit with caution.
 var planted = window.gardenData;
 var harvestable = window.harvestTable;
+const rootStyles = getComputedStyle(document.documentElement);
+const colorEmpty = rootStyles.getPropertyValue('--colorEmpty').trim();
+const colorPlanted = rootStyles.getPropertyValue('--colorPlanted').trim();
 
 // constants for non-garden spaces
 const plotTitle = document.querySelector("#plotTitle");
@@ -170,10 +173,10 @@ function noteText() {
     text = "";
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
-            text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from " + pFilter[i].location + 
+            text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from p" + pFilter[i].plot + pFilter[i].location + 
             ". \n \n";
         } else {
-            text += "* " + pFilter[i].item + " was planted on " + pFilter[i].planted + " in " + pFilter[i].location + 
+            text += "* " + pFilter[i].item + " was planted on " + pFilter[i].planted + " in p" + pFilter[i].plot + pFilter[i].location + 
             ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
         };
     };
@@ -194,11 +197,11 @@ function plantedColor() {
         console.log("planted color triggered");
     };
     for (let i = 0; i < pLen; i++) {
-        let locationName = "p" + pFilter[i].plot + pFilter[i].location;
+        let locationName = pFilter[i].location;
         if (pFilter[i].removed !== "") {
-            document.getElementById(locationName).style.backgroundColor = "var(--colorEmpty)";
+            document.getElementById(locationName).style.backgroundColor = colorEmpty;
         } else {
-            document.getElementById(locationName).style.backgroundColor = "var(--colorPlanted)";
+            document.getElementById(locationName).style.backgroundColor = colorPlanted;
         };
     };
 }
