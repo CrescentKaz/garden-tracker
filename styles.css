@@ -41,7 +41,7 @@ body {
     color: var(--colorEmpty);
 }
 
-#plot1Section .garden-location-s {
+#plotSection .garden-location-s {
     min-height: 53.3px;
     min-width: 53.3px;
     height: 16.8vw;
@@ -49,23 +49,7 @@ body {
     border: black solid 1px;
 }
 
-#plot1Section .garden-location-c {
-    min-height: 32px;
-    min-width: 32px;
-    height: 10vw;
-    width: 10vw;
-    border: black solid 1px;
-}
-
-#plot2Section .garden-location-s {
-    min-height: 53.3px;
-    min-width: 53.3px;
-    height: 15.1vw;
-    width: 15.1vw;
-    border: black solid 1px;
-}
-
-#plot2Section .garden-location-c {
+#plotSection .garden-location-c {
     min-height: 32px;
     min-width: 32px;
     height: 10vw;
