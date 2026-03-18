@@ -193,10 +193,11 @@ function noteText() {
 }
 
 function plantedColor() {
+    let pLen = pFilter.length;
     if (testing) {
         console.log("planted color triggered");
+        console.log("pLen is " + pLen);
     };
-    let pLen = pFilter.length;
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
         if (pFilter[i].removed !== "") {
