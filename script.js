@@ -204,8 +204,8 @@ function plantedColor() {
             document.getElementById(locationName).style.backgroundColor = colorEmpty;
         } else {
             document.getElementById(locationName).style.backgroundColor = colorPlanted;
-            document.getElementById(locationName).style.color = black;
-            locationName.innerText = pFilter[i].name; 
+            document.getElementById(locationName).style.color = "#000000";
+            locationName.innerText = pFilter[i].item; 
         };
     };
 }
