@@ -1,18 +1,19 @@
 // this is the test file for the planted array 
+
 window.gardenData = [
     {
         plot: "2",
-        location: "",
+        location: "s4",
         item: "TESTING2",
-        planted: "YYYYMMDD",
+        planted: "20000417",
         harvest: "",
         removed: ""
     },
     {
         plot: "3",
-        location: "",
+        location: "c5",
         item: "TESTING3",
-        planted: "YYYYMMDD",
+        planted: "20150515",
         harvest: "",
         removed: ""
     },
@@ -20,7 +21,8 @@ window.gardenData = [
         plot: "1",
         location: "c13",
         item: "Chocolate Mint",
-        planted: "YYYYMMDD",
+        planted: "20240317",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -28,7 +30,8 @@ window.gardenData = [
         plot: "1",
         location: "c12",
         item: "Chocolate Mint",
-        planted: "YYYYMMDD",
+        planted: "20240317",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -44,7 +47,8 @@ window.gardenData = [
         plot: "1",
         location: "c9",
         item: "Parsley",
-        planted: "YYYYMMDD",
+        planted: "20240221",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -52,7 +56,8 @@ window.gardenData = [
         plot: "1",
         location: "c10",
         item: "Parsley",
-        planted: "YYYYMMDD",
+        planted: "20240221",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -60,7 +65,8 @@ window.gardenData = [
         plot: "1",
         location: "c11",
         item: "Parsley",
-        planted: "YYYYMMDD",
+        planted: "20240221",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -68,7 +74,8 @@ window.gardenData = [
         plot: "1",
         location: "c6",
         item: "Strawberries",
-        planted: "YYYYMMDD",
+        planted: "20250613",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -76,7 +83,8 @@ window.gardenData = [
         plot: "1",
         location: "c7",
         item: "Strawberries",
-        planted: "YYYYMMDD",
+        planted: "20250613",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -84,7 +92,8 @@ window.gardenData = [
         plot: "1",
         location: "c8",
         item: "Strawberries",
-        planted: "YYYYMMDD",
+        planted: "20250613",
+        //planted date is inaccurate
         harvest: "as needed",
         removed: ""
     },
@@ -92,7 +101,8 @@ window.gardenData = [
         plot: "1",
         location: "s1",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
@@ -100,7 +110,8 @@ window.gardenData = [
         plot: "1",
         location: "s2",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
@@ -108,7 +119,8 @@ window.gardenData = [
         plot: "1",
         location: "s3",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
@@ -116,7 +128,8 @@ window.gardenData = [
         plot: "1",
         location: "s7",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
@@ -124,7 +137,8 @@ window.gardenData = [
         plot: "1",
         location: "s8",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
@@ -132,7 +146,8 @@ window.gardenData = [
         plot: "1",
         location: "s9",
         item: "Peas",
-        planted: "YYYYMMDD",
+        planted: "20260227",
+        //planted date is inaccurate
         harvest: "2026",
         removed: ""
     },
