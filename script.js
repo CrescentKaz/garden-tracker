@@ -196,12 +196,15 @@ function plantedColor() {
     if (testing) {
         console.log("planted color triggered");
     };
+    let pLen = pFilter.length;
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
         if (pFilter[i].removed !== "") {
             document.getElementById(locationName).style.backgroundColor = colorEmpty;
         } else {
             document.getElementById(locationName).style.backgroundColor = colorPlanted;
+            document.getElementById(locationName).style.color = black;
+            locationName.innerText = pFilter[i].name; 
         };
     };
 }
