@@ -38,7 +38,7 @@ window.gardenData = [
         item: "Broccoli",
         planted: "20241001",
         harvest: "March 2026",
-        removed: ""
+        removed: "20260317"
     },
     {
         plot: "1",
