@@ -129,7 +129,6 @@ function filterSwitchtrack() {
     if (testing) {
         console.log("filter switchtrack triggered");
     };
-    pFilter = planted.sort((a, b) => a.location - b.location);
     if (page === "plot1") {
         pFilter = planted.filter(function(item) {
         return item.plot === "1";
@@ -163,6 +162,29 @@ function filterSwitchtrack() {
     } else {
         console.log("switchtrack failed");
     };
+}
+
+// the sortingHat function is in charge of sorting the results by location name and removing duplicate entries.
+// the duplicate it removes is the one with the older planted date. 
+function sortingHat() {
+    let pLen = pFilter.length;
+    pFilter - pFilter.sort((a, b) => a.planted - b.planted);
+    pFilter = pFilter.sort((a, b) => a.location - b.location);
+    if (testing) {
+        console.log("sortingHat triggered");
+        console.log("starting pLen is " + pLen);
+    }
+    for (let i = 0; i < pLen; i++) {
+        if (pFilter[i].location = pFilter[i+1].location) {
+            if (pFilter[i].planted < pFilter[i+1].planted) {
+                pFilter.splice(pFilter[i]);
+                if (testing) {
+                    console.log("duplicate found. new pLen is " + pLen);
+                };
+            };
+        };
+    };
+    
 }
 
 function noteText() {
