@@ -129,7 +129,7 @@ function filterSwitchtrack() {
     if (testing) {
         console.log("filter switchtrack triggered");
     };
-    pFilter = planted.location.toLowerCase().sort();
+    pFilter = planted.sort((a, b) => a.location - b.location);
     if (page === "plot1") {
         pFilter = planted.filter(function(item) {
         return item.plot === "1";
