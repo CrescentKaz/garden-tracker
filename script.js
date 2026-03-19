@@ -4,6 +4,8 @@ var harvestable = window.harvestTable;
 const rootStyles = getComputedStyle(document.documentElement);
 const colorEmpty = rootStyles.getPropertyValue('--colorEmpty').trim();
 const colorPlanted = rootStyles.getPropertyValue('--colorPlanted').trim();
+const colorHarvestReady = rootStyles.getPropertyValue('--colorHarvestReady').trim();
+const colorOverRipe = rootStyles.getPropertyValue('--colorOverRipe').trim();
 
 // constants for non-garden spaces
 const plotTitle = document.querySelector("#plotTitle");
@@ -222,12 +224,15 @@ function plantedColor() {
     };
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
-        if (pFilter[i].removed !== "") {
-            document.getElementById(locationName).style.backgroundColor = colorEmpty;
-        } else {
+        document.getElementById(locationName).style.backgroundColor = colorEmpty;
+        locationName.innerText = ""; 
+        if (pFilter[i].removed === "") {
             document.getElementById(locationName).style.backgroundColor = colorPlanted;
             document.getElementById(locationName).style.color = "#000000";
             locationName.innerText = pFilter[i].item; 
+            if (testing) {
+                console.log(pFilter[i].item);
+            };
         };
     };
 }
