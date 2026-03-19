@@ -218,18 +218,19 @@ function noteText() {
 
 function plantedColor() {
     let pLen = pFilter.length;
+    let spaceID = document.getElementById(locationName);
     if (testing) {
         console.log("planted color triggered");
         console.log("pLen is " + pLen);
     };
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
-        document.getElementById(locationName).style.backgroundColor = colorEmpty;
+        spaceID.style.backgroundColor = colorEmpty;
         locationName.innerText = ""; 
         if (pFilter[i].removed === "") {
-            document.getElementById(locationName).style.backgroundColor = colorPlanted;
-            document.getElementById(locationName).style.color = "#000000";
-            locationName.innerText = pFilter[i].item; 
+            spaceID.style.backgroundColor = colorPlanted;
+            spaceID.style.color = "#000000";
+            spaceID.innerText = pFilter[i].item; 
             if (testing) {
                 console.log(pFilter[i].item);
             };
