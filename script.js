@@ -80,6 +80,7 @@ function showPlot1() {
     plotTitle.innerText = "Garden Plot 1";
     plotLogTitle.innerText = "Plot 1 Log";
     filterSwitchtrack();
+    sortingHat();
     noteText();
     plantedColor();
 }
@@ -96,6 +97,7 @@ function showPlot2() {
     plotTitle.innerText = "Garden Plot 2";
     plotLogTitle.innerText = "Plot 2 Log";
     filterSwitchtrack();
+    sortingHat();
     noteText();
     plantedColor();
 }
@@ -112,6 +114,7 @@ function showPlot3() {
     plotTitle.innerText = "Garden Plot 3";
     plotLogTitle.innerText = "Plot 3 Log";
     filterSwitchtrack();
+    sortingHat();
     noteText();
     plantedColor();
 }
