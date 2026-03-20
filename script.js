@@ -229,7 +229,7 @@ function plantedColor() {
         locationName.innerText = ""; 
         if (pFilter[i].removed === "") {
             spaceID.style.backgroundColor = colorPlanted;
-            spaceID.style.color = "#000000";
+            spaceID.style.color = colorEmpty;
             spaceID.innerText = pFilter[i].item; 
             if (testing) {
                 console.log(pFilter[i].item);

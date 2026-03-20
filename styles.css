@@ -1,9 +1,9 @@
 :root {
-    --colorEmpty: antiquewhite;
-    --colorHover: aqua;
-    --colorPlanted: green; 
-    --colorHarvestReady: gold;
-    --colorOverRipe: darkred;
+    --colorEmpty: rgb(208, 162, 129);
+    --colorHover: rgb(0, 157, 255);
+    --colorPlanted: rgb(0, 71, 0); 
+    --colorHarvestReady: rgb(154, 133, 10);
+    --colorOverRipe: rgb(100, 0, 0);
 }
 
 @media (max-width: 450px) {
