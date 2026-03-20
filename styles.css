@@ -4,6 +4,8 @@
     --colorPlanted: rgb(0, 71, 0); 
     --colorHarvestReady: rgb(154, 133, 10);
     --colorOverRipe: rgb(100, 0, 0);
+    --colorLight: antiquewhite;
+    --colorDark: black;
 }
 
 @media (max-width: 450px) {
@@ -13,7 +15,7 @@
 }
 
 body {
-    background-color: antiquewhite; 
+    background-color: var(--colorLight); 
 }
 
 .garden-map {
@@ -47,7 +49,9 @@ body {
     min-width: 53.3px;
     height: 16.8vw;
     width: 16.8vw;
-    border: black solid 1px;
+    border: var(--colorDark) solid 1px;
+    background-color: var(--colorEmpty);
+    color: var(--colorEmpty);
 }
 
 #plotSection .garden-location-c {
@@ -55,12 +59,14 @@ body {
     min-width: 32px;
     height: 10vw;
     width: 10vw;
-    border: black solid 1px;
+    border: var(--colorDark) solid 1px;
+    background-color: var(--colorEmpty);
+    color: var(--colorEmpty);
 }
 
 .garden-location-c:hover, .garden-location-s:hover {
     background-color: var(--colorHover);
-    color: black;
+    color: var(--colorDark);
 }
 
 .garden-log {
