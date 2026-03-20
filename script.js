@@ -218,13 +218,13 @@ function noteText() {
 
 function plantedColor() {
     let pLen = pFilter.length;
-    let spaceID = document.getElementById(locationName);
     if (testing) {
         console.log("planted color triggered");
         console.log("pLen is " + pLen);
     };
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
+        let spaceID = document.getElementById(locationName);
         spaceID.style.backgroundColor = colorEmpty;
         locationName.innerText = ""; 
         if (pFilter[i].removed === "") {
