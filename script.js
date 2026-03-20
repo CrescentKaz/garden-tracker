@@ -12,6 +12,8 @@ const plotTitle = document.querySelector("#plotTitle");
 const plotLogTitle = document.querySelector("#plotLogTitle");
 const plotLog = document.querySelector("#plotLog");
 const gardenNotes = document.querySelector("#gardenNotes");
+const gardenLocationS = document.querySelector(".garden-location-s");
+const gardenLocationC = document.querySelector(".garden-location-c");
 
 // constants for plot 1 garden spaces
 const c1 = document.querySelector("#c1");
@@ -218,6 +220,8 @@ function noteText() {
 
 function plantedColor() {
     let pLen = pFilter.length;
+    gardenLocationC.style.backgroundColor = colorEmpty;
+    gardenLocationS.style.backgroundColor = colorEmpty;
     if (testing) {
         console.log("planted color triggered");
         console.log("pLen is " + pLen);
@@ -225,7 +229,6 @@ function plantedColor() {
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i].location;
         let spaceID = document.getElementById(locationName);
-        spaceID.style.backgroundColor = colorEmpty;
         locationName.innerText = ""; 
         if (pFilter[i].removed === "") {
             spaceID.style.backgroundColor = colorPlanted;
