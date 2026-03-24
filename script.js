@@ -180,10 +180,12 @@ function sortingHat() {
     if (testing) {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
+        console.log(pFilter);
     }
     for (let i = 0; i < pLen; i++) {
-        if (pFilter[i].location = pFilter[i+1].location) {
-            if (pFilter[i].planted < pFilter[i+1].planted) {
+        let j = i+1;
+        if (pFilter[i].location = pFilter[j].location) {
+            if (pFilter[i].planted < pFilter[j].planted) {
                 pFilter.splice(pFilter[i]);
                 if (testing) {
                     console.log("duplicate found. new pLen is " + pLen);
