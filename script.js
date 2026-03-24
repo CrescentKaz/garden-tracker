@@ -138,21 +138,21 @@ function filterSwitchtrack() {
     };
     if (page === "plot1") {
         pFilter = planted.filter(function(item) {
-        return item.plot === "1";
+        return item["plot"] === "1";
         });
         if (testing) {
             console.log("filter switched to plot 1");
         };
     } else if (page === "plot2") {
         pFilter = planted.filter(function(item) {
-        return item.plot === "2";
+        return item["plot"] === "2";
         });
         if (testing) {
             console.log("filter switched to plot 2");
         };
     } else if (page === "plot3") {
         pFilter = planted.filter(function(item) {
-        return item.plot === "3";
+        return item["plot"] === "3";
         });
         if (testing) {
             console.log("filter switched to plot 3");
@@ -175,17 +175,16 @@ function filterSwitchtrack() {
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
     let pLen = pFilter.length;
-    pFilter = pFilter.sort((a, b) => a.planted - b.planted);
-    pFilter = pFilter.sort((a, b) => a.location - b.location);
+    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
+    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     if (testing) {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
-        console.log(pFilter);
     }
     for (let i = 0; i < pLen; i++) {
         let j = i+1;
-        if (pFilter[i].location = pFilter[j].location) {
-            if (pFilter[i].planted < pFilter[j].planted) {
+        if (pFilter[i]["location"] = pFilter[j]["location"]) {
+            if (pFilter[i]["planted"] < pFilter[j]["planted"]) {
                 pFilter.splice(pFilter[i]);
                 if (testing) {
                     console.log("duplicate found. new pLen is " + pLen);
@@ -201,16 +200,16 @@ function noteText() {
         console.log("note text triggered");
     };
     let pLen = pFilter.length;
-    pFilter = pFilter.sort((a, b) => a.planted - b.planted);
-    pFilter = pFilter.sort((a, b) => a.location - b.location);
+    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
+    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     text = "";
     for (let i = 0; i < pLen; i++) {
-        if (pFilter[i].removed !== "") {
-            text += "* " + pFilter[i].item + " was removed on " + pFilter[i].removed + " from p" + pFilter[i].plot + pFilter[i].location + 
+        if (pFilter[i]["removed"] !== "") {
+            text += "* " + pFilter[i]["item"] + " was removed on " + pFilter[i]["removed"] + " from p" + pFilter[i]["plot"] + pFilter[i]["location"] + 
             ". \n \n";
         } else {
-            text += "* " + pFilter[i].item + " was planted on " + pFilter[i].planted + " in p" + pFilter[i].plot + pFilter[i].location + 
-            ". \n --> Estimated harvest is " + pFilter[i].harvest + ". \n \n";
+            text += "* " + pFilter[i]["item"] + " was planted on " + pFilter[i]["planted"] + " in p" + pFilter[i]["plot"] + pFilter[i]["location"] + 
+            ". \n --> Estimated harvest is " + pFilter[i]["harvest"] + ". \n \n";
         };
     };
     if (testing) {
@@ -218,7 +217,7 @@ function noteText() {
     }
     if (page === "notes") {
         gardenNotes.innerText = text;
-    } else if (page = 1 || 2 || 3) {
+    } else if (page === "plot1" || "plot2" || "plot3") {
         plotLog.innerText = text;
     } else {
         console.log("note text failed");
@@ -234,15 +233,15 @@ function plantedColor() {
         console.log("pLen is " + pLen);
     };
     for (let i = 0; i < pLen; i++) {
-        let locationName = pFilter[i].location;
+        let locationName = pFilter[i]["location"];
         let spaceID = document.getElementById(locationName);
         locationName.innerText = ""; 
-        if (pFilter[i].removed === "") {
+        if (pFilter[i]["removed"] === "") {
             spaceID.style.backgroundColor = colorPlanted;
             spaceID.style.color = colorEmpty;
-            spaceID.innerText = pFilter[i].item; 
+            spaceID.innerText = pFilter[i]["item"]; 
             if (testing) {
-                console.log(pFilter[i].item);
+                console.log(pFilter[i]["item"]);
             };
         };
     };
