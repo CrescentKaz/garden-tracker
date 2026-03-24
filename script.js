@@ -175,7 +175,7 @@ function filterSwitchtrack() {
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
     let pLen = pFilter.length;
-    pFilter - pFilter.sort((a, b) => a.planted - b.planted);
+    pFilter = pFilter.sort((a, b) => a.planted - b.planted);
     pFilter = pFilter.sort((a, b) => a.location - b.location);
     if (testing) {
         console.log("sortingHat triggered");
@@ -201,6 +201,8 @@ function noteText() {
         console.log("note text triggered");
     };
     let pLen = pFilter.length;
+    pFilter = pFilter.sort((a, b) => a.planted - b.planted);
+    pFilter = pFilter.sort((a, b) => a.location - b.location);
     text = "";
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i].removed !== "") {
