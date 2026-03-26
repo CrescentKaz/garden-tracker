@@ -183,7 +183,7 @@ function sortingHat() {
     }
     for (let i = 0; i < pLen; i++) {
         let j = i+1;
-        if (pFilter[i]["location"] = pFilter[j]["location"]) {
+        if (pFilter[i]["location"] == pFilter[j]["location"]) {
             if (pFilter[i]["planted"] < pFilter[j]["planted"]) {
                 pFilter.splice(pFilter[i]);
                 if (testing) {
