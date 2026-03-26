@@ -137,23 +137,17 @@ function filterSwitchtrack() {
         console.log("filter switchtrack triggered");
     };
     if (page === "plot1") {
-        pFilter = planted.filter(function(item) {
-        return item["plot"] === "1";
-        });
+        pFilter = planted.filter(planted => planted["plot"] === "1");
         if (testing) {
             console.log("filter switched to plot 1");
         };
     } else if (page === "plot2") {
-        pFilter = planted.filter(function(item) {
-        return item["plot"] === "2";
-        });
+        pFilter = planted.filter(planted => planted["plot"] === "2");
         if (testing) {
             console.log("filter switched to plot 2");
         };
     } else if (page === "plot3") {
-        pFilter = planted.filter(function(item) {
-        return item["plot"] === "3";
-        });
+        pFilter = planted.filter(planted => planted["plot"] === "3");
         if (testing) {
             console.log("filter switched to plot 3");
         };
