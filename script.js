@@ -175,6 +175,7 @@ function sortingHat() {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
     }
+/*
     for (let i = 0; i < pLen; i++) {
         let j = i+1;
         if (pFilter[i]["location"] == pFilter[j]["location"]) {
@@ -186,7 +187,7 @@ function sortingHat() {
             };
         };
     };
-    
+*/  
 }
 
 function noteText() {
