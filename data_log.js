@@ -265,7 +265,7 @@ window.gardenData = [
     },
     {
         "plot": "1",
-        "location": "c23
+        "location": "c23",
         "item": "marigold",
         "planted": "20260328",
         "harvest": "",
@@ -273,7 +273,7 @@ window.gardenData = [
     },
     {
         "plot": "1",
-        "location": "c24
+        "location": "c24",
         "item": "carrot",
         "planted": "20260328",
         "harvest": "",
