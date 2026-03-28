@@ -77,7 +77,7 @@ window.gardenData = [
         "planted": "20250613",
         //planted date is inaccurate
         "harvest": "as needed",
-        "removed": ""
+        "removed": "20260328"
     },
     {
         "plot": "1",
@@ -86,7 +86,7 @@ window.gardenData = [
         "planted": "20250613",
         //planted date is inaccurate
         "harvest": "as needed",
-        "removed": ""
+        "removed": "20260328"
     },
     {
         "plot": "1",
@@ -95,7 +95,7 @@ window.gardenData = [
         "planted": "20250613",
         //planted date is inaccurate
         "harvest": "as needed",
-        "removed": ""
+        "removed": "20260328"
     },
     {
         "plot": "1",
@@ -172,6 +172,118 @@ window.gardenData = [
         "location": "c5",
         "item": "Basil",
         "planted": "20260314",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c2",
+        "item": "carrot",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c4",
+        "item": "carrot",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c14",
+        "item": "oregano",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c15",
+        "item": "strawberry",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c16",
+        "item": "oregano",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c17",
+        "item": "strawberry",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c18",
+        "item": "oregano",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c19",
+        "item": "marigold",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c20",
+        "item": "carrot",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c21",
+        "item": "marigold",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c22",
+        "item": "carrot",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c23
+        "item": "marigold",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "c24
+        "item": "carrot",
+        "planted": "20260328",
+        "harvest": "",
+        "removed": ""
+    },
+    {
+        "plot": "1",
+        "location": "s4",
+        "item": "lettuce",
+        "planted": "20260328",
         "harvest": "",
         "removed": ""
     },
