@@ -62,6 +62,7 @@ body {
     border: var(--colorDark) solid 1px;
     background-color: var(--colorEmpty);
     color: var(--colorEmpty);
+    font-size: smaller; 
 }
 
 .garden-location-c:hover, .garden-location-s:hover {
