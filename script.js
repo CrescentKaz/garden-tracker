@@ -6,14 +6,16 @@ const colorEmpty = rootStyles.getPropertyValue('--colorEmpty').trim();
 const colorPlanted = rootStyles.getPropertyValue('--colorPlanted').trim();
 const colorHarvestReady = rootStyles.getPropertyValue('--colorHarvestReady').trim();
 const colorOverRipe = rootStyles.getPropertyValue('--colorOverRipe').trim();
+const colorLight = rootStyles.getPropertyValue('--colorLight').trim();
+const colorDark = rootStyles.getPropertyValue('--colorDark').trim();
 
 // constants for non-garden spaces
 const plotTitle = document.querySelector("#plotTitle");
 const plotLogTitle = document.querySelector("#plotLogTitle");
 const plotLog = document.querySelector("#plotLog");
 const gardenNotes = document.querySelector("#gardenNotes");
-const gardenLocationS = document.querySelector(".garden-location-s");
-const gardenLocationC = document.querySelector(".garden-location-c");
+const gardenLocationS = document.querySelectorAll(".garden-location-s");
+const gardenLocationC = document.querySelectorAll(".garden-location-c");
 
 // constants for plot 1 garden spaces
 const c1 = document.querySelector("#c1");
@@ -169,7 +171,6 @@ function filterSwitchtrack() {
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
     let pLen = pFilter.length;
-    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
     pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     if (testing) {
         console.log("sortingHat triggered");
@@ -178,12 +179,20 @@ function sortingHat() {
 /*
     for (let i = 0; i < pLen; i++) {
         let j = i+1;
-        if (pFilter[i]["location"] == pFilter[j]["location"]) {
+        if (pFilter[i]["location"] === pFilter[j]["location"]) {
             if (pFilter[i]["planted"] < pFilter[j]["planted"]) {
                 pFilter.splice(pFilter[i]);
                 if (testing) {
                     console.log("duplicate found. new pLen is " + pLen);
                 };
+            } else if (pFilter[i]["planted"] > pFilter[j]["planted"]) {
+                pFilter.splice(pFilter[j]);
+                if (testing) {
+                    console.log("duplicate found. new pLen is " + pLen);
+                };
+            } else {
+                console.log("error found. two data points have the same location and date planted: " + pFilter[i]["item"] + " and " +  
+                pFilter[j]["item"] + " in " + pFilter[i]["location"] + " on " + pFilter[i]["planted"]);
             };
         };
     };
@@ -220,9 +229,8 @@ function noteText() {
 }
 
 function plantedColor() {
+    colorReset();
     let pLen = pFilter.length;
-    gardenLocationC.style.backgroundColor = colorEmpty;
-    gardenLocationS.style.backgroundColor = colorEmpty;
     if (testing) {
         console.log("planted color triggered");
         console.log("pLen is " + pLen);
@@ -233,13 +241,20 @@ function plantedColor() {
         locationName.innerText = ""; 
         if (pFilter[i]["removed"] === "") {
             spaceID.style.backgroundColor = colorPlanted;
-            spaceID.style.color = colorEmpty;
+            spaceID.style.color = colorLight;
             spaceID.innerText = pFilter[i]["item"]; 
             if (testing) {
                 console.log(pFilter[i]["item"]);
             };
         };
     };
+}
+
+function colorReset() {
+    gardenLocationC.style.backgroundColor = colorEmpty;
+    gardenLocationS.style.backgroundColor = colorEmpty;
+    gardenLocationC.style.color = colorEmpty;
+    gardenLocationS.style.color = colorEmpty;
 }
 
 /* this function needs double checking before live testing

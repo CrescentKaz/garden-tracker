@@ -178,7 +178,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c2",
-        "item": "carrot",
+        "item": "Carrots",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -186,7 +186,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c4",
-        "item": "carrot",
+        "item": "Carrots",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -194,7 +194,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c14",
-        "item": "oregano",
+        "item": "Oregano",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -202,7 +202,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c15",
-        "item": "strawberry",
+        "item": "Strawberries",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -210,7 +210,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c16",
-        "item": "oregano",
+        "item": "Oregano",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -218,7 +218,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c17",
-        "item": "strawberry",
+        "item": "Strawberries",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -226,7 +226,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c18",
-        "item": "oregano",
+        "item": "Oregano",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -234,7 +234,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c19",
-        "item": "marigold",
+        "item": "Marigold",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -242,7 +242,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c20",
-        "item": "carrot",
+        "item": "Carrots",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -250,7 +250,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c21",
-        "item": "marigold",
+        "item": "Marigold",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -258,7 +258,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c22",
-        "item": "carrot",
+        "item": "Carrots",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -266,7 +266,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c23",
-        "item": "marigold",
+        "item": "Marigold",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -274,7 +274,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "c24",
-        "item": "carrot",
+        "item": "Carrots",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
@@ -282,7 +282,7 @@ window.gardenData = [
     {
         "plot": "1",
         "location": "s4",
-        "item": "lettuce",
+        "item": "Lettuce",
         "planted": "20260328",
         "harvest": "",
         "removed": ""
