@@ -229,8 +229,8 @@ function noteText() {
 }
 
 function plantedColor() {
-    gardenLocationC.forEach(colorReset());
-    gardenLocationS.forEach(colorReset());
+    colorResetC();
+    colorResetS();
     let pLen = pFilter.length;
     if (testing) {
         console.log("planted color triggered");
@@ -251,9 +251,20 @@ function plantedColor() {
     };
 }
 
-function colorReset(item) {
-    item.style.backgroundColor = colorEmpty;
-    item.style.color = colorEmpty;
+function colorResetC(gardenLocationC) {
+    let length = gardenLocationC.length;
+    for(let i=0; i<length; i++) {
+        gardenLocationC[i].style.backgroundColor = colorEmpty;
+        gardenLocationC[i].style.color = colorEmpty;
+    };
+}
+
+function colorResetS(gardenLocationS) {
+    let length = gardenLocationS.length;
+    for(let i=0; i<length; i++) {
+        gardenLocationS[i].style.backgroundColor = colorEmpty;
+        gardenLocationS[i].style.color = colorEmpty;
+    };
 }
 
 /* this function needs double checking before live testing
