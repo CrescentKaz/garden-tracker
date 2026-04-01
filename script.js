@@ -229,7 +229,8 @@ function noteText() {
 }
 
 function plantedColor() {
-    colorReset();
+    gardenLocationC.forEach(colorReset());
+    gardenLocationS.forEach(colorReset());
     let pLen = pFilter.length;
     if (testing) {
         console.log("planted color triggered");
@@ -250,11 +251,9 @@ function plantedColor() {
     };
 }
 
-function colorReset() {
-    gardenLocationC.style.backgroundColor = colorEmpty;
-    gardenLocationS.style.backgroundColor = colorEmpty;
-    gardenLocationC.style.color = colorEmpty;
-    gardenLocationS.style.color = colorEmpty;
+function colorReset(item) {
+    item.style.backgroundColor = colorEmpty;
+    item.style.color = colorEmpty;
 }
 
 /* this function needs double checking before live testing
