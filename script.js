@@ -9,7 +9,6 @@ const colorOverRipe = rootStyles.getPropertyValue('--colorOverRipe').trim();
 const colorLight = rootStyles.getPropertyValue('--colorLight').trim();
 const colorDark = rootStyles.getPropertyValue('--colorDark').trim();
 
-// constants for non-garden spaces
 const plotTitle = document.querySelector("#plotTitle");
 const plotLogTitle = document.querySelector("#plotLogTitle");
 const plotLog = document.querySelector("#plotLog");
@@ -17,7 +16,6 @@ const gardenNotes = document.querySelector("#gardenNotes");
 const gardenLocationS = document.querySelectorAll(".garden-location-s");
 const gardenLocationC = document.querySelectorAll(".garden-location-c");
 
-// constants for plot 1 garden spaces
 const c1 = document.querySelector("#c1");
 const c2 = document.querySelector("#c2");
 const c3 = document.querySelector("#c3");
@@ -52,7 +50,8 @@ const s7 = document.querySelector("#s7");
 const s8 = document.querySelector("#s8");
 const s9 = document.querySelector("#s9");
 
-// set testing to true to display console logs for troubleshooting. set testing to false if you do not wish to generate the console logs. 
+// set testing to true to display console logs for troubleshooting.
+// set testing to false if you do not wish to generate the console logs. 
 let testing = true;
 
 let text = "";
@@ -176,7 +175,7 @@ function sortingHat() {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
     }
-/*
+/* commented out for troubleshooting purposes elsewhere
     for (let i = 0; i < pLen; i++) {
         let j = i+1;
         if (pFilter[i]["location"] === pFilter[j]["location"]) {
@@ -204,8 +203,8 @@ function noteText() {
         console.log("note text triggered");
     };
     let pLen = pFilter.length;
-    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
-    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
+//    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
+//    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     text = "";
     for (let i = 0; i < pLen; i++) {
         if (pFilter[i]["removed"] !== "") {
@@ -229,13 +228,13 @@ function noteText() {
 }
 
 function plantedColor() {
-    colorResetC();
-    colorResetS();
     let pLen = pFilter.length;
     if (testing) {
         console.log("planted color triggered");
         console.log("pLen is " + pLen);
     };
+    colorResetC();
+    colorResetS();
     for (let i = 0; i < pLen; i++) {
         let locationName = pFilter[i]["location"];
         let spaceID = document.getElementById(locationName);
@@ -252,16 +251,20 @@ function plantedColor() {
 }
 
 function colorResetC(gardenLocationC) {
-    let length = gardenLocationC.length;
-    for(let i=0; i<length; i++) {
+    if (testing) {
+        console.log("colorResetC triggered \n C length is " + gardenLocationC.length + "\n above should be 24");
+    }
+    for(let i = 0; i < gardenLocationC.length; i++) {
         gardenLocationC[i].style.backgroundColor = colorEmpty;
         gardenLocationC[i].style.color = colorEmpty;
     };
 }
 
 function colorResetS(gardenLocationS) {
-    let length = gardenLocationS.length;
-    for(let i=0; i<length; i++) {
+    if (testing) {
+        console.log("colorResetS triggered \n S length is " + gardenLocationS.length + "\n above should be 9");
+    }
+    for(let i = 0; i < gardenLocationS.length; i++) {
         gardenLocationS[i].style.backgroundColor = colorEmpty;
         gardenLocationS[i].style.color = colorEmpty;
     };
