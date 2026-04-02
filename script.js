@@ -250,7 +250,7 @@ function plantedColor() {
     };
 }
 
-function colorResetC(gardenLocationC) {
+function colorResetC() {
     if (testing) {
         console.log("colorResetC triggered \n C length is " + gardenLocationC.length + "\n above should be 24");
     }
@@ -260,7 +260,7 @@ function colorResetC(gardenLocationC) {
     };
 }
 
-function colorResetS(gardenLocationS) {
+function colorResetS() {
     if (testing) {
         console.log("colorResetS triggered \n S length is " + gardenLocationS.length + "\n above should be 9");
     }
