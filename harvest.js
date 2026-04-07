@@ -13,7 +13,7 @@ window.harvestTable = [
     {
         name: "Chamomile",
         scientificName: "GENUS SPECIES",
-        nickname: "chamomile",
+        nickname: "Chamomile",
         SOT: "Feb-May and Sept-Oct",
         harvestReady: 80,
         overripe: 2,
@@ -25,7 +25,7 @@ window.harvestTable = [
     {
         name: "Sweet Marjoram",
         scientificName: "GENUS SPECIES",
-        nickname: "marjoram",
+        nickname: "Marjoram",
         SOT: "Jan-Feb",
         harvestReady: 60,
         overripe: 2,
@@ -37,7 +37,7 @@ window.harvestTable = [
     {
         name: "Munstead Lavender",
         scientificName: "GENUS SPECIES",
-        nickname: "lavender",
+        nickname: "Lavender",
         SOT: "Feb-May",
         harvestReady: 85,
         overripe: 2,
@@ -49,7 +49,7 @@ window.harvestTable = [
     {
         name: "Sweet Corn (Stowell's Evergreen)",
         scientificName: "GENUS SPECIES",
-        nickname: "corn",
+        nickname: "Corn",
         SOT: "Mar-Aug",
         harvestReady: 90,
         overripe: 2,
@@ -61,7 +61,7 @@ window.harvestTable = [
     {
         name: "Alaska Peas",
         scientificName: "GENUS SPECIES",
-        nickname: "peas",
+        nickname: "Peas",
         SOT: "Jan-Mar and Sept",
         harvestReady: 58,
         overripe: 2,
@@ -73,7 +73,7 @@ window.harvestTable = [
     {
         name: "Pumpkin (Early Sugar or Pie)",
         scientificName: "GENUS SPECIES",
-        nickname: "pumpkin",
+        nickname: "Pumpkin",
         SOT: "Mar-Jun",
         harvestReady: 90,
         overripe: 2,
@@ -85,7 +85,7 @@ window.harvestTable = [
     {
         name: "Peppermint",
         scientificName: "GENUS SPECIES",
-        nickname: "peppermint",
+        nickname: "Peppermint",
         SOT: "Feb-May",
         harvestReady: 60,
         overripe: 2,
@@ -97,7 +97,7 @@ window.harvestTable = [
     {
         name: "Sunflower (Evening Sun)",
         scientificName: "GENUS SPECIES",
-        nickname: "sunflower",
+        nickname: "Sunflower",
         SOT: "Mar-Jul",
         harvestReady: 85,
         overripe: 2,
@@ -109,7 +109,7 @@ window.harvestTable = [
     {
         name: "Parsley (Moss Curled)",
         scientificName: "GENUS SPECIES",
-        nickname: "parsley",
+        nickname: "Parsley",
         SOT: "Jan-Apr and Aug-Oct",
         harvestReady: 75,
         overripe: 2,
@@ -121,7 +121,7 @@ window.harvestTable = [
     {
         name: "Oregano",
         scientificName: "Origanum vulgare",
-        nickname: "oregano",
+        nickname: "Oregano",
         SOT: "Feb-May and Aug-Sept",
         harvestReady: 85,
         overripe: 2,
@@ -129,5 +129,77 @@ window.harvestTable = [
         plantingDepth: "1/8in",
         spacing: "12in",
         height: "14-22in"
+    },
+    {
+        name: "Sweet Basil",
+        scientificName: "",
+        nickname: "Basil",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
+    {
+        name: "Strawberries",
+        scientificName: "",
+        nickname: "Strawberries",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
+    {
+        name: "Chocolate Mint",
+        scientificName: "",
+        nickname: "Chocolate Mint",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
+    {
+        name: "Lettuce",
+        scientificName: "",
+        nickname: "Lettuce",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
+    {
+        name: "Carrot",
+        scientificName: "",
+        nickname: "Carrots",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
+    {
+        name: "Marigold",
+        scientificName: "",
+        nickname: "Marigold",
+        SOT: "",
+        harvestReady: 0,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
     },
 ];
