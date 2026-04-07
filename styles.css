@@ -66,8 +66,8 @@ body {
 }
 
 .garden-location-c:hover, .garden-location-s:hover {
-    background-color: var(--colorHover);
-    color: var(--colorDark);
+    background-color: var(--colorHover) !important;
+    color: var(--colorDark) !important;
 }
 
 .garden-log {

@@ -169,29 +169,33 @@ function filterSwitchtrack() {
 // the sortingHat function is in charge of sorting the results by location name and removing duplicate entries.
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
-    let pLen = pFilter.length;
-    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
+    pFSorted = pFilter.sort((a, b) => a["location"] - b["location"]);
+    let pLen = pFSorted.length;
     if (testing) {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
+        console.log("sorted results are: ");
     }
     for (let i = 0; i < pLen; i++) {
         let j = i + 1;
-        if ( pFilter[i]["location"] === pFilter[j]["location"] ) {
-            if (pFilter[i]["planted"] < pFilter[j]["planted"]) {
-                pFilter.splice(pFilter[i]);
+        if ( pFSorted[i]["location"] === pFSorted[j]["location"] ) {
+            if (pFSorted[i]["planted"] < pFSorted[j]["planted"]) {
+                pFSorted.splice(pFSorted[i]);
                 if (testing) {
-                    console.log("duplicate found. new pLen is " + pLen);
+                    console.log("duplicate found. removing [i]. new pLen is " + pLen);
                 };
-            } else if (pFilter[i]["planted"] > pFilter[j]["planted"]) {
-                pFilter.splice(pFilter[j]);
+            } else if (pFSorted[i]["planted"] > pFSorted[j]["planted"]) {
+                pFSorted.splice(pFSorted[j]);
                 if (testing) {
-                    console.log("duplicate found. new pLen is " + pLen);
+                    console.log("duplicate found. removing [j]. new pLen is " + pLen);
                 };
             } else {
-                console.log("error found. two data points have the same location and date planted: " + pFilter[i]["item"] + " and " +  
-                pFilter[j]["item"] + " in " + pFilter[i]["location"] + " on " + pFilter[i]["planted"]);
+                console.log("error found. two data points have the same location and date planted: " + pFSorted[i]["item"] + " and " +  
+                pFSorted[j]["item"] + " in " + pFSorted[i]["location"] + " on " + pFSorted[i]["planted"]);
             };
+        };
+        if (testing) {
+            console.log(pFSorted[i]["item"]);
         };
     };
 }
@@ -200,7 +204,7 @@ function noteText() {
     if (testing) {
         console.log("note text triggered");
     };
-    let pLen = pFilter.length;
+    let pLen = pFSorted.length;
 //    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
 //    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     text = "";
