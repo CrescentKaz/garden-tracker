@@ -198,6 +198,7 @@ function sortingHat() {
             console.log(pFSorted[i]["item"]);
         };
     };
+    let pFilter = pFSorted;
 }
 
 function noteText() {
