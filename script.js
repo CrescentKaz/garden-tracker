@@ -177,8 +177,7 @@ function sortingHat() {
         console.log("starting pLen is " + pLen);
         console.log("sorted results are: ");
     }
-    for (let i = 0; i < pLen; i++) {
-        let j = i + 1;
+    for (let i = 0, j = 1; j < pLen; i++, j++) {
         if ( pFSorted[i]["location"] === pFSorted[j]["location"] ) {
             if (pFSorted[i]["planted"] < pFSorted[j]["planted"]) {
                 pFSorted.splice(pFSorted[i]);
