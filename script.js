@@ -56,6 +56,7 @@ let testing = true;
 
 let text = "";
 let pFilter = [];
+let pFSorted = [];
 let page = "";
 
 // triggered by a button, shows only the content first visable upon page (DOM?) loading. 
