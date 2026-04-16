@@ -170,7 +170,8 @@ function filterSwitchtrack() {
 // the sortingHat function is in charge of sorting the results by location name and removing duplicate entries.
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
-    pFSorted = pFilter.sort((a, b) => a["location"] - b["location"]);
+    pFSorted = pFilter;
+    //.sort((a, b) => a["location"] - b["location"]);
     let pSLen = pFSorted.length;
     if (testing) {
         console.log("sortingHat triggered");
