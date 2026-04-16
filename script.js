@@ -171,23 +171,23 @@ function filterSwitchtrack() {
 // the duplicate it removes is the one with the older planted date. 
 function sortingHat() {
     pFSorted = pFilter.sort((a, b) => a["location"] - b["location"]);
-    let pLen = pFSorted.length;
+    let pSLen = pFSorted.length;
     if (testing) {
         console.log("sortingHat triggered");
         console.log("starting pLen is " + pLen);
         console.log("sorted results are: ");
     }
-    for (let i = 0, j = 1; j < pLen; i++, j++) {
+    for (let i = 0, j = 1; j < pSLen; i++, j++) {
         if ( pFSorted[i]["location"] === pFSorted[j]["location"] ) {
             if (pFSorted[i]["planted"] < pFSorted[j]["planted"]) {
                 pFSorted.splice(pFSorted[i]);
                 if (testing) {
-                    console.log("duplicate found. removing [i]. new pLen is " + pLen);
+                    console.log("duplicate found. removing [i]. new pLen is " + pSLen);
                 };
             } else if (pFSorted[i]["planted"] > pFSorted[j]["planted"]) {
                 pFSorted.splice(pFSorted[j]);
                 if (testing) {
-                    console.log("duplicate found. removing [j]. new pLen is " + pLen);
+                    console.log("duplicate found. removing [j]. new pLen is " + pSLen);
                 };
             } else {
                 console.log("error found. two data points have the same location and date planted: " + pFSorted[i]["item"] + " and " +  
@@ -199,6 +199,7 @@ function sortingHat() {
         };
     };
     let pFilter = pFSorted;
+    let pLen = PSLen;
 }
 
 function noteText() {
