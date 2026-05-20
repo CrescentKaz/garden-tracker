@@ -200,7 +200,7 @@ function sortingHat() {
         };
     };
     pFilter = pFSorted;
-    let pLen = PSLen;
+    let pLen = pSLen;
 }
 
 function noteText() {
