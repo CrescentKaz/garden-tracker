@@ -207,7 +207,7 @@ function noteText() {
     if (testing) {
         console.log("note text triggered");
     };
-    let pLen = pFSorted.length;
+    let pLen = pFilter.length;
 //    pFilter = pFilter.sort((a, b) => a["planted"] - b["planted"]);
 //    pFilter = pFilter.sort((a, b) => a["location"] - b["location"]);
     text = "";
