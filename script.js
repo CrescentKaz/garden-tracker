@@ -199,7 +199,7 @@ function sortingHat() {
             console.log(pFSorted[i]["item"]);
         };
     };
-    let pFilter = pFSorted;
+    pFilter = pFSorted;
     let pLen = PSLen;
 }
 
