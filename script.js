@@ -172,7 +172,7 @@ function filterSwitchtrack() {
 function sortingHat() {
     pFSorted = pFilter;
     let pLen = pFilter.length;
-    //.sort((a, b) => a["location"] - b["location"]);
+    pFSorted.sort((a, b) => a["location"] - b["location"]);
     let pSLen = pFSorted.length;
     if (testing) {
         console.log("sortingHat triggered");
