@@ -168,69 +168,70 @@ window.gardenData = [
         removed: ""
     },
     {
-        "plot": "1",
-        "location": "c5",
-        "item": "Basil",
-        "planted": "20260314",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c5",
+        item: "Basil",
+        planted: 20260314,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c2",
-        "item": "Carrots",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c2",
+        item: "Carrots",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c4",
-        "item": "Carrots",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c4",
+        item: "Carrots",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c14",
-        "item": "Oregano",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c14",
+        item: "Oregano",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c15",
-        "item": "Strawberries",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c15",
+        item: "Strawberries",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c16",
-        "item": "Oregano",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c16",
+        item: "Oregano",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c17",
-        "item": "Strawberries",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c17",
+        item: "Strawberries",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
     {
-        "plot": "1",
-        "location": "c18",
-        "item": "Oregano",
-        "planted": "20260328",
-        "harvest": "",
-        "removed": ""
+        plot: 1,
+        location: "c18",
+        item: "Oregano",
+        planted: 20260328,
+        harvest: "",
+        removed: ""
     },
+/*
     {
         "plot": "1",
         "location": "c19",
@@ -287,4 +288,5 @@ window.gardenData = [
         "harvest": "",
         "removed": ""
     },
+*/
 ];
