@@ -20,8 +20,14 @@ body {
 
 .garden-map {
     margin: auto;
-    padding: auto;
-    width: 90vw;
+    max-width: min(95vw, 60vh);
+}
+
+#h1, #h2, #h3 {
+    display: flex;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
 }
 
 .horizontal-content {
