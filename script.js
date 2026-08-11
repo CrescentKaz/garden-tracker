@@ -258,20 +258,24 @@ function plantedColor() {
 function colorResetC() {
     if (testing) {
         console.log("colorResetC triggered \n C length is " + gardenLocationC.length + "\n above should be 24");
+        console.log("cell inner text reset");
     }
     for(let i = 0; i < gardenLocationC.length; i++) {
         gardenLocationC[i].style.backgroundColor = colorEmpty;
         gardenLocationC[i].style.color = colorEmpty;
+        gardenLocationC[i].innerText = gardenLocationC[i].dataset.original;
     };
 }
 
 function colorResetS() {
     if (testing) {
         console.log("colorResetS triggered \n S length is " + gardenLocationS.length + "\n above should be 9");
+        console.log("spot inner text reset");
     }
     for(let i = 0; i < gardenLocationS.length; i++) {
         gardenLocationS[i].style.backgroundColor = colorEmpty;
         gardenLocationS[i].style.color = colorEmpty;
+        gardenLocationS[i].innerText = gardenLocationS[i].dataset.original;
     };
 }
 
