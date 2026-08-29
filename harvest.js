@@ -202,4 +202,16 @@ window.harvestTable = [
         spacing: "",
         height: ""
     },
+    {
+        name: "Broccoli (DeCincco)",
+        scientificName: "",
+        nickname: "Broccoli",
+        SOT: "",
+        harvestReady: 80,
+        overripe: 0,
+        daysToGerm: "",
+        plantingDepth: "",
+        spacing: "",
+        height: ""
+    },
 ];

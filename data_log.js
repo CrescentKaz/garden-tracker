@@ -7,7 +7,7 @@ window.gardenData = [
         item: "TESTING2",
         planted: 20000417,
         harvest: "",
-        removed: ""
+        removed: "20260828"
     },
     {
         plot: 3,
@@ -21,8 +21,7 @@ window.gardenData = [
         plot: 1,
         location: "c13",
         item: "Chocolate Mint",
-        planted: 20240317,
-        //planted date is inaccurate
+        planted: 20240921,
         harvest: "as needed",
         removed: ""
     },
@@ -30,8 +29,7 @@ window.gardenData = [
         plot: 1,
         location: "c12",
         item: "Chocolate Mint",
-        planted: 20240317,
-        //planted date is inaccurate
+        planted: 20240921,
         harvest: "as needed",
         removed: ""
     },
@@ -47,8 +45,7 @@ window.gardenData = [
         plot: 1,
         location: "c9",
         item: "Parsley",
-        planted: 20240221,
-        //planted date is inaccurate
+        planted: 20241228,
         harvest: "as needed",
         removed: ""
     },
@@ -56,8 +53,7 @@ window.gardenData = [
         plot: 1,
         location: "c10",
         item: "Parsley",
-        planted: 20240221,
-        //planted date is inaccurate
+        planted: 20241228,
         harvest: "as needed",
         removed: ""
     },
@@ -65,17 +61,15 @@ window.gardenData = [
         plot: 1,
         location: "c11",
         item: "Parsley",
-        planted: 20240221,
-        //planted date is inaccurate
+        planted: 20241228,
         harvest: "as needed",
-        removed: ""
+        removed: 20260822
     },
     {
         plot: 1,
         location: "c6",
         item: "Strawberries",
-        planted: 20250613, 
-        //planted date is inaccurate
+        planted: 20250426, 
         harvest: "as needed",
         removed: 20260328
     },
@@ -83,8 +77,7 @@ window.gardenData = [
         plot: 1,
         location: "c7",
         item: "Strawberries",
-        planted: 20250613,
-        //planted date is inaccurate
+        planted: 20250426,
         harvest: "as needed",
         removed: 20260328
     },
@@ -92,8 +85,7 @@ window.gardenData = [
         plot: 1,
         location: "c8",
         item: "Strawberries",
-        planted: 20250613,
-        //planted date is inaccurate
+        planted: 20250426,
         harvest: "as needed",
         removed: 20260328
     },
@@ -293,6 +285,192 @@ window.gardenData = [
         planted: 20260328,
         harvest: "",
         removed: 20260811
+    },
+    {
+        plot: 1,
+        location: "s1",
+        item: "Pumpkin",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s1",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s2",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s3",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s4",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s5",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s6",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s7",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s8",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 2,
+        location: "s9",
+        item: "Corn",
+        planted: 20260829,
+        harvest: "20261127",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s1",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s3",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s4",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s6",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s7",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 3,
+        location: "s9",
+        item: "Broccoli",
+        planted: 20260829,
+        harvest: "20261117",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s2",
+        item: "Basil",
+        planted: 20260829,
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s3",
+        item: "Basil",
+        planted: 20260829,
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s4",
+        item: "Basil",
+        planted: 20260815,
+        // planted date may or may not be accurate
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s5",
+        item: "Basil",
+        planted: 20260829,
+        // planted date may or may not be accurate
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s7",
+        item: "Basil",
+        planted: 20260829,
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s8",
+        item: "Basil",
+        planted: 20260829,
+        harvest: "",
+        removed: ""
+    },
+    {
+        plot: 1,
+        location: "s9",
+        item: "Basil",
+        planted: 20260825,
+        harvest: "",
+        removed: ""
     },
 /*
     {
