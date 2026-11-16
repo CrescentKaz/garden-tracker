@@ -1,5 +1,80 @@
 // this is the test file for the planted array 
 
+window.gardenData2 = [
+    {
+        plot: 1,
+        // max of 9 spots
+        spot: [Pumpkin, Basil, Basil, 
+               Basil, Basil, Basil, 
+               Basil, Basil, Basil],
+        // max of 24 cells
+        cell: [0, 1, 2, 3, 4,
+               5, 6, 7, 8, 9,
+               10, 11, 12, 13, 14,
+               15, 16, 17, 18, 19,
+               20, 21, 22, 23],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: "Basil is wild grown from previous pots. Unkown planted dates for the basil, good luck. Pumpkin was planted "
+    },
+    {
+        plot: 2,
+        // max of 9 spots
+        spot: [Broccoli, 1, Broccoli,
+               Broccoli, 4, Broccoli,
+               Broccoli, 7, Broccoli],
+        // max of 24 cells
+        cell: [0, 1, 2, 3, 4,
+               5, 6, 7, 8, 9,
+               10, 11, 12, 13, 14,
+               15, 16, 17, 18, 19,
+               20, 21, 22, 23],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: ""
+    },
+    {
+        plot: 3,
+        // max of 9 spots
+        spot: [0, 1, 2, 
+               3, 4, 5, 
+               6, 7, 8],
+        // max of 24 cells
+        cell: [0, 1, 2, 3, 4,
+               5, 6, 7, 8, 9,
+               10, 11, 12, 13, 14,
+               15, 16, 17, 18, 19,
+               20, 21, 22, 23],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: ""
+    },
+    {
+        plot: 4,
+        // max of unknown spots
+        spot: [],
+        // max of unknown cells
+        cell: [],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: ""
+    },
+    {
+        plot: 5,
+        // max of unknown spots
+        spot: [],
+        // max of unknown cells
+        cell: [],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: ""
+    },
+    {
+        plot: "POTS",
+        // max of unknown pots on the south side of the Eureka
+        south: [],
+        // max of unknown pots on the north side of the Eureka
+        north: [],
+        // for the notes, include when stuff was planted or anything that might be useful in the future.
+        notes: ""
+    }
+];
+
 window.gardenData = [
     {
         plot: 2,
@@ -55,7 +130,7 @@ window.gardenData = [
         item: "Parsley",
         planted: 20241228,
         harvest: "as needed",
-        removed: ""
+        removed: "20261001"
     },
     {
         plot: 1,
