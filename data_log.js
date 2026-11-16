@@ -8,13 +8,12 @@ window.gardenData2 = [
                Basil, Basil, Basil, 
                Basil, Basil, Basil],
         // max of 24 cells
-        cell: [0, 1, 2, 3, 4,
-               5, 6, 7, 8, 9,
-               10, 11, 12, 13, 14,
-               15, 16, 17, 18, 19,
-               20, 21, 22, 23],
+        cell: [0, 1, 2, 3, 4, 5, 6, 
+               7, Parsley, 9, 10, Chocolate_Mint, 
+               Chocolate_Mint, 13, 14, 15, 16, 17, 18, 
+               19, 20, Carrot, 22, 23],
         // for the notes, include when stuff was planted or anything that might be useful in the future.
-        notes: "Basil is wild grown from previous pots. Unkown planted dates for the basil, good luck. Pumpkin was planted "
+        notes: "Basil is wild grown from previous pots seeding the plot. Chocolate Mint was planted 20240921. Parsley was planted on 20241228. Carrot was planted 20260328. Pumpkin was planted 20260829. "
     },
     {
         plot: 2,
@@ -23,11 +22,10 @@ window.gardenData2 = [
                Broccoli, 4, Broccoli,
                Broccoli, 7, Broccoli],
         // max of 24 cells
-        cell: [0, 1, 2, 3, 4,
-               5, 6, 7, 8, 9,
-               10, 11, 12, 13, 14,
-               15, 16, 17, 18, 19,
-               20, 21, 22, 23],
+        cell: [0, 1, 2, 3, 4, 5, 6, 
+               7, 8, 9, 10, 11, 
+               12, 13, 14, 15, 16, 17, 18, 
+               19, 20, 21, 22, 23],
         // for the notes, include when stuff was planted or anything that might be useful in the future.
         notes: ""
     },
@@ -38,11 +36,10 @@ window.gardenData2 = [
                3, 4, 5, 
                6, 7, 8],
         // max of 24 cells
-        cell: [0, 1, 2, 3, 4,
-               5, 6, 7, 8, 9,
-               10, 11, 12, 13, 14,
-               15, 16, 17, 18, 19,
-               20, 21, 22, 23],
+        cell: [0, 1, 2, 3, 4, 5, 6, 
+               7, 8, 9, 10, 11, 
+               12, 13, 14, 15, 16, 17, 18, 
+               19, 20, 21, 22, 23],
         // for the notes, include when stuff was planted or anything that might be useful in the future.
         notes: ""
     },
