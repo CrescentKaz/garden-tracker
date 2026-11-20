@@ -84,8 +84,10 @@ body {
   grid-template-columns: auto auto auto;
   background-color: dodgerblue;
   padding: 10px;
+/*
   height: 71vw;
   width: 71vw;
+*/
   place-content: center;
 }
 
