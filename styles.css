@@ -30,6 +30,7 @@ body {
     min-width: 0;
 }
 
+/*
 .horizontal-content {
     display: flex;
     flex-direction: row;
@@ -69,6 +70,44 @@ body {
     background-color: var(--colorEmpty);
     color: var(--colorEmpty);
     font-size: smaller; 
+}
+*/
+
+.garden-location-c, .garden-location-s {
+    border: var(--colorDark) solid 1px;
+    background-color: var(--colorEmpty);
+    color: var(--colorEmpty);
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  height: 71vw;
+  width: 71vw;
+  place-content: center;
+}
+
+.container1 div {
+  background-color: #f1f1f1;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.spot {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .garden-location-c:hover, .garden-location-s:hover {
