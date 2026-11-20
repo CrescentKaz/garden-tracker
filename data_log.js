@@ -1,5 +1,6 @@
 // this is the test file for the planted array 
 
+/*
 window.gardenData2 = [
     {
         plot: 1,
@@ -71,6 +72,7 @@ window.gardenData2 = [
         notes: ""
     }
 ];
+*/
 
 window.gardenData = [
     {
