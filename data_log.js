@@ -1,4 +1,11 @@
 // this is the test file for the planted array 
+const Pumpkin = "Pumpkin";
+const Basil = "Basil";
+const Parsley = "Parsley";
+const Chocolate_Mint = "Chocolate Mint";
+const Broccoli = "Broccoli";
+const Carrot = "Carrot";
+const Blackberry = "Blackberry";
 
 /*
 window.gardenData2 = [
