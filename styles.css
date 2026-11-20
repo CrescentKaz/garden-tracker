@@ -50,6 +50,7 @@ body {
     gap: 0;
     color: var(--colorEmpty);
 }
+*/
 
 #plotSection .garden-location-s {
     min-height: 53.3px;
@@ -71,23 +72,11 @@ body {
     color: var(--colorEmpty);
     font-size: smaller; 
 }
-*/
-
-.garden-location-c, .garden-location-s {
-    border: var(--colorDark) solid 1px;
-    background-color: var(--colorEmpty);
-    color: var(--colorEmpty);
-}
 
 .container1 {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
   padding: 10px;
-/*
-  height: 71vw;
-  width: 71vw;
-*/
   place-content: center;
 }
 
